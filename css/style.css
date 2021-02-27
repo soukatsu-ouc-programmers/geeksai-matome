@@ -1,60 +1,76 @@
+:root {
+  --main-color: #3da9fc;
+  --base-color: #dedede;
+  --highlight-color: #ffffff;
+  --shadow-color: #bdbdbd;
+
+  --room-color: #c17ca0;
+  --hall-color-a: #6fa0e9;
+  --hall-color-b: #de6769;
+  --hall-color-c: #95c380;
+}
 * {
-    box-sizing: border-box;
-} 
+  box-sizing: border-box;
+}
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #fffffe;
+  margin: 0;
+  padding: 0;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ,
+    Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* background-color: #fffffe; */
+  background-color: var(--base-color);
 }
 header {
-    width: 100%;
-    padding: 30px 104px 35px 79px;
-    margin: 0 0 148px 0;
-    background-color: #3da9fc;
-    color:#fffffe;
-    top: 0;
-    display: flex;
-    align-items: center;
-}
-.times{
-    width: 61px;
-
-    margin:0 20px 0 97px;
-}
-.timeText{
-    height: 87px;
-    margin: 178px 0 0 0;
-    font-size: 20px;
-    color:#3da9fc;
-}
-h1 {
-    margin: 0;
-    padding: 0 0 0 0;
-    font-size: 30px;
-}
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-li {
-    margin: 0 15px 0 15px;
-    padding: 10px;
-    font-size: 30px;
-}
-.day-list {
-    margin:0 0 0 auto;
-}
-.nav-list {
-    margin: 0 0 0 auto;
+  width: 100%;
+  padding: 30px 104px 35px 79px;
+  /* margin: 0 0 148px 0; */
+  background-color: var(--main-color);
+  color: var(--base-color);
+  top: 0;
+  display: flex;
+  align-items: center;
 }
 .main{
-    width: 100%;
-    display: flex;
+    padding-top: 148px;
 }
-.Kouen{
+.times {
+  width: 61px;
+
+  margin: 0 20px 0 97px;
+}
+.timeText {
+  /* height: 87px; */
+  margin: 178px 0 0 0;
+  font-size: 20px;
+  color: var(--main-color);
+}
+h1 {
+  margin: 0;
+  padding: 0 0 0 0;
+  font-size: 30px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+li {
+  margin: 0 15px 0 15px;
+  padding: 10px;
+  font-size: 30px;
+}
+.day-list {
+  margin: 0 0 0 auto;
+}
+.nav-list {
+  margin: 0 0 0 auto;
+}
+.main {
+  width: 100%;
+  display: flex;
+}
+/* .Kouen{
     width: 1176px;
     border: solid 1px #000;
     margin:0 0 0 0;
@@ -62,88 +78,124 @@ li {
 .Benkyo{
     border: solid 1px #000;
     margin: 0 0 0 auto;
-}
-.dayAndtitle{
-    display: flex;
-    margin:0 0 0px 0;
-
+} */
+.dayAndtitle {
+  display: flex;
+  margin: 0 0 0px 0;
 }
 h2 {
-    width: 280px;
-    height: 58px;
-    margin: 0 auto 23px auto;
-    text-align: center;
-    font-size: 30px;
-    background-color: #5f6c7b;
-    padding: 10px 0;
-    border-radius: 72px;
-    background: #fffffe;
-    box-shadow:  15px 15px 18px #c7c7c6,
-                 -15px -15px 18px #ffffff;
-    color:#3da9fc;
+  width: 280px;
+  height: 58px;
+  margin: 0 auto 23px auto;
+  text-align: center;
+  font-size: 30px;
+  /* background-color: #5f6c7b; */
+  padding: 10px 0;
+  border-radius: 72px;
+  background: var(--base-color);
+  box-shadow: 6px 6px 10px var(--shadow-color),
+    -6px -6px 10px var(--highlight-color);
+  color: var(--main-color);
 }
-.Day{
-    font-size: 50px;
-    color:#3da9fc;
+.Day {
+  font-size: 50px;
+  color: var(--main-color);
 }
-.dayBlock{
-    width: 100%;
-    margin:0 0 200px 0;
-    display: flex;
-
+.dayBlock {
+  width: 100%;
+  margin: 0 0 200px 0;
+  display: flex;
 }
-.roomA{
-    width: 318px;
-    margin: 0px;
-    color: #C17CA0;
+.roomA {
+  width: 318px;
+  margin: 0px;
+  color: var(--room-color);
 }
-.roomB{
-    width: 318px;
-    margin: 0px;
-    color: #C17CA0;
+.roomB {
+  width: 318px;
+  margin: 0px;
+  color: var(--room-color);
 }
-.holes{
-    width: 100%;
-    margin: 0 20px 0 0;
+.holes {
+  width: 100%;
+  margin: 0 20px 0 0;
 }
 
 .holeA {
-    width: 318px;
-    margin: 0px;
-    color: #6FA0E9;
+  width: 318px;
+  margin: 0px;
+  color: var(--hall-color-a);
 }
 .holeB {
-    width: 318px;
-    margin: 0px;
-    color: #DE6769;
+  width: 318px;
+  margin: 0px;
+  color: var(--hall-color-b);
 }
 .holeC {
-    width: 318px;
-    margin: 0px;
-    color: #95C380;
+  width: 318px;
+  margin: 0px;
+  color: var(--hall-color-c);
 }
 
-.holeA > .sessionBlock{
-
-
+.holeA > .sessionBlock {
 }
-.holeB > .sessionBlock{
-
+.holeB > .sessionBlock {
 }
-.holeC > .sessionBlock{
-
+.holeC > .sessionBlock {
 }
-h3 {
-    width: 318px;
-    height: 68px;
-    margin: 0 19px 0px 0px;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
-    border-radius: 61px;
-    background: #fffffe;
-    box-shadow: inset 12px 12px 7px #e3e3e2,
-                inset -12px -12px 7px #ffffff;
+h3:not(.info > h3) {
+  width: 318px;
+  height: 68px;
+  /* margin: 0px 19px 0px 0px; */
+  margin: 20px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  border-radius: 61px;
+  background: var(--base-color);
+  box-shadow: inset 6px 6px 7px var(--shadow-color),
+    inset -6px -6px 7px var(--highlight-color);
+}
+
+.sessionBlock {
+  width: 298px;
+  margin: 10px auto 78px auto;
+  padding: 20px 35px;
+
+  text-align: center;
+  height: 189px;
+  border-radius: 36px;
+  background: var(--base-color);
+  box-shadow: 9px 9px 13px var(--shadow-color),
+    -9px -9px 13px var(--highlight-color);
+}
+.sessionText {
+  font-size: 11px;
+}
+.sessionText > h4 {
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* 使い方のとこ */
+.use {
+  width: 100%;
+  height: 300px;
+  margin: 0;
+  background-color: #5f6c7b;
+}
+
+footer {
+  margin: 0;
+  width: 100%;
+  padding: 80px 4% 10px;
+  background-color: var(--main-color);
+  color: #fffffe;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
 
 #tweet-list {
   /* margin: 0px 19px 0px 0px; */
@@ -160,33 +212,17 @@ h3 {
     inset -6px -6px 7px var(--highlight-color);
 }
 
-.sessionBlock{
-    width: 298px;
-    margin: 10px auto 78px auto;
-    padding: 20px 35px;
-    text-align: center;
-    height: 189px;
-    border-radius: 36px;
-    background: #fffffe;
-    box-shadow:  14px 14px 28px #c9c9c9,
-                 -14px -14px 28px #fffffe;
-}
-.sessionText{
 #tweet-list > div {
   margin-left: auto;
   margin-right: auto;
 }
 
-    font-size: 11px;
 .info {
   justify-content: center;
   display: flex;
   text-align: center;
   margin-bottom: 78px;
 }
-h4 {
-    font-size: 17px;
-    text-align: center;
 
 .info > h3 {
   font-size: 2rem;
@@ -194,11 +230,6 @@ h4 {
   margin: 20px;
 }
 
-.use{
-    width:  100%;
-    height: 300px;
-    margin: 0;
-    background-color: #5f6c7b;
 /* tweetまとめページのタイトルカード */
 .sessionTitle {
   width: 30vw;
@@ -213,15 +244,6 @@ h4 {
     -9px -9px 13px var(--highlight-color);
 }
 
-footer{
-    margin:0;
-    width: 100%;
-    padding: 80px 4% 10px;
-    background-color: #3da9fc;
-    color:#fffffe;
-    top: 0;
-    display: flex;
-    align-items: center;
-}.sessionTitle h4 {
+.sessionTitle h4 {
   font-size: 2rem;
 }
