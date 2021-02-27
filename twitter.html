@@ -5,41 +5,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twitterテスト</title>
+    <title>Tweetまとめ</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 
 <body>
-    <div id="app">
+    <header>
+        <h1>
+            <a>技育祭おまとめさん</a>
+        </h1>
+        <ul class="day-list">
+            <li class="header-list-item">
+                <a>Day1</a>
+            </li>
+            <li class="header-list-item">
+                <a>Day2</a>
+            </li>
+            <li class="header-list-item">
+                <a>Day3</a>
+            </li>
+        </ul>
+        <ul class="nav-list">
+            <li class="header-list-item">
+                <a>使い方</a>
+            </li>
+            <li class="header-list-item">
+                <a>技育祭公式サイト</a>
+            </li>
+            <li class="header-list-item">
+                <a>Github</a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="sessionTitle">
+        <div class="sessionText">
+            <h4>
+                <a>これからの社会の変化と若者に求められるあり方とは</a>
+            </h4>
+            <a>東京大学大学院工学系研究科 教授　松尾 豊</a>
+        </div>
+    </div>
+
+    <div class="info">
+        <h3>ホールA</h3>
+        <h3>13：00～14：00</h3>
+    </div>
+
+    <div id="tweet-list">
         <blockquote class="twitter-tweet" v-for="data in tweetData">
-            <!-- <a v-bind:href="`https://twitter.com/${data.user.screen_name}/status/${data.id}`"></a> -->
+            <a href="https://twitter.com/sana_natori/status/1364720183688929280"></a>
+        </blockquote>
+        <!-- <blockquote class="twitter-tweet" v-for="data in tweetData">
+            <a v-bind:href="`https://twitter.com/user/status/${data.id_str}`"></a>
+        </blockquote> -->
+    </div>
+
+    <!-- <div id="app">
+        <blockquote class="twitter-tweet" v-for="data in tweetData">
             <a v-bind:href="`https://twitter.com/user/status/${data.id_str}`"></a>
         </blockquote>
-    </div>
+    </div> -->
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <script>
-        var app = new Vue({
-            el: '#app',
-            data: {
-                tweetData: []
-            },
-            methods: {
-                async getTweetData() {
-                    const url = './js/data/api-out.json'
-                    await axios.get(url).then(x => { this.tweetData = x.data })
-                    // this.tweetIds = tweetData.reduce((acc, value, index) => {
-                    //     acc.push(value['user']['id']);
-                    //     return acc;
-                    // }, []);
-                }
-            },
-            mounted() {
-                this.getTweetData()
-            }
-        });
+        // var app = new Vue({
+        //     // el: '#app',
+        //     el: '#tweet-list',
+        //     data: {
+        //         tweetData: []
+        //     },
+        //     methods: {
+        //         async getTweetData() {
+        //             const url = './js/data/api-out.json'
+        //             await axios.get(url).then(x => { this.tweetData = x.data })
+        //             // this.tweetIds = tweetData.reduce((acc, value, index) => {
+        //             //     acc.push(value['user']['id']);
+        //             //     return acc;
+        //             // }, []);
+        //         }
+        //     },
+        //     mounted() {
+        //         this.getTweetData();
+        //     }
+        // });
     </script>
 </body>
 

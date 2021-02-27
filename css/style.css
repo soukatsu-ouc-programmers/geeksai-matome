@@ -144,6 +144,20 @@ h3 {
     background: #fffffe;
     box-shadow: inset 12px 12px 7px #e3e3e2,
                 inset -12px -12px 7px #ffffff;
+
+#tweet-list {
+  /* margin: 0px 19px 0px 0px; */
+  width: 40vw;
+  padding: 30px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  vertical-align: middle;
+  border-radius: 61px;
+  background: var(--base-color);
+  box-shadow: inset 6px 6px 7px var(--shadow-color),
+    inset -6px -6px 7px var(--highlight-color);
 }
 
 .sessionBlock{
@@ -158,12 +172,26 @@ h3 {
                  -14px -14px 28px #fffffe;
 }
 .sessionText{
+#tweet-list > div {
+  margin-left: auto;
+  margin-right: auto;
+}
 
     font-size: 11px;
+.info {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  margin-bottom: 78px;
 }
 h4 {
     font-size: 17px;
     text-align: center;
+
+.info > h3 {
+  font-size: 2rem;
+  color: var(--main-color);
+  margin: 20px;
 }
 
 .use{
@@ -171,6 +199,18 @@ h4 {
     height: 300px;
     margin: 0;
     background-color: #5f6c7b;
+/* tweetまとめページのタイトルカード */
+.sessionTitle {
+  width: 30vw;
+  margin: 50px auto 50px auto;
+  padding: 30px;
+  text-align: center;
+  color: var(--hall-color-a);
+  /* height: 189px; */
+  border-radius: 36px;
+  background: var(--base-color);
+  box-shadow: 9px 9px 13px var(--shadow-color),
+    -9px -9px 13px var(--highlight-color);
 }
 
 footer{
@@ -182,4 +222,6 @@ footer{
     top: 0;
     display: flex;
     align-items: center;
+}.sessionTitle h4 {
+  font-size: 2rem;
 }
