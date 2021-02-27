@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twitterテスト</title>
 </head>
+
 <body>
-    
+    <div id="app">
+        <blockquote class="twitter-tweet" v-for="data in tweetData">
+            <!-- <a v-bind:href="`https://twitter.com/${data.user.screen_name}/status/${data.id}`"></a> -->
+            <a v-bind:href="`https://twitter.com/user/status/${data.id_str}`"></a>
+        </blockquote>
+    </div>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                tweetData: []
+            },
+            methods: {
+                async getTweetData() {
+                    const url = './js/data/api-out.json'
+                    await axios.get(url).then(x => { this.tweetData = x.data })
+                    // this.tweetIds = tweetData.reduce((acc, value, index) => {
+                    //     acc.push(value['user']['id']);
+                    //     return acc;
+                    // }, []);
+                }
+            },
+            mounted() {
+                this.getTweetData()
+            }
+        });
+    </script>
 </body>
+
 </html>
