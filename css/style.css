@@ -35,7 +35,6 @@ header {
 }
 .times {
   width: 61px;
-
   margin: 0 20px 0 97px;
 }
 .timeText {
@@ -72,11 +71,11 @@ li {
 }
 /* .Kouen{
     width: 1176px;
-    border: solid 1px #000;
+
     margin:0 0 0 0;
 }
 .Benkyo{
-    border: solid 1px #000;
+
     margin: 0 0 0 auto;
 } */
 .dayAndtitle {
