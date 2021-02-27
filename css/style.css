@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+} 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #fffffe;
+}
+header {
+    width: 100%;
+    padding: 30px 104px 35px 79px;
+    margin: 0 0 148px 0;
+    background-color: #3da9fc;
+    color:#fffffe;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+.times{
+    width: 61px;
+
+    margin:0 20px 0 97px;
+}
+.timeText{
+    height: 87px;
+    margin: 178px 0 0 0;
+    font-size: 20px;
+    color:#3da9fc;
+}
+h1 {
+    margin: 0;
+    padding: 0 0 0 0;
+    font-size: 30px;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+li {
+    margin: 0 15px 0 15px;
+    padding: 10px;
+    font-size: 30px;
+}
+.day-list {
+    margin:0 0 0 auto;
+}
+.nav-list {
+    margin: 0 0 0 auto;
+}
+.main{
+    width: 100%;
+    display: flex;
+}
+.Kouen{
+    width: 1176px;
+    border: solid 1px #000;
+    margin:0 0 0 0;
+}
+.Benkyo{
+    border: solid 1px #000;
+    margin: 0 0 0 auto;
+}
+.dayAndtitle{
+    display: flex;
+    margin:0 0 0px 0;
+
+}
+h2 {
+    width: 280px;
+    height: 58px;
+    margin: 0 auto 23px auto;
+    text-align: center;
+    font-size: 30px;
+    background-color: #5f6c7b;
+    padding: 10px 0;
+    border-radius: 72px;
+    background: #fffffe;
+    box-shadow:  15px 15px 18px #c7c7c6,
+                 -15px -15px 18px #ffffff;
+    color:#3da9fc;
+}
+.Day{
+    font-size: 50px;
+    color:#3da9fc;
+}
+.dayBlock{
+    width: 100%;
+    margin:0 0 200px 0;
+    display: flex;
+
+}
+.roomA{
+    width: 318px;
+    margin: 0px;
+    color: #C17CA0;
+}
+.roomB{
+    width: 318px;
+    margin: 0px;
+    color: #C17CA0;
+}
+.holes{
+    width: 100%;
+    margin: 0 20px 0 0;
+}
+
+.holeA {
+    width: 318px;
+    margin: 0px;
+    color: #6FA0E9;
+}
+.holeB {
+    width: 318px;
+    margin: 0px;
+    color: #DE6769;
+}
+.holeC {
+    width: 318px;
+    margin: 0px;
+    color: #95C380;
+}
+
+.holeA > .sessionBlock{
+
+
+}
+.holeB > .sessionBlock{
+
+}
+.holeC > .sessionBlock{
+
+}
+h3 {
+    width: 318px;
+    height: 68px;
+    margin: 0 19px 0px 0px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 61px;
+    background: #fffffe;
+    box-shadow: inset 12px 12px 7px #e3e3e2,
+                inset -12px -12px 7px #ffffff;
+}
+
+.sessionBlock{
+    width: 298px;
+    margin: 10px auto 78px auto;
+    padding: 20px 35px;
+    text-align: center;
+    height: 189px;
+    border-radius: 36px;
+    background: #fffffe;
+    box-shadow:  14px 14px 28px #c9c9c9,
+                 -14px -14px 28px #fffffe;
+}
+.sessionText{
+
+    font-size: 11px;
+}
+h4 {
+    font-size: 17px;
+    text-align: center;
+}
+
+.use{
+    width:  100%;
+    height: 300px;
+    margin: 0;
+    background-color: #5f6c7b;
+}
+
+footer{
+    margin:0;
+    width: 100%;
+    padding: 80px 4% 10px;
+    background-color: #3da9fc;
+    color:#fffffe;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
