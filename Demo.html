@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/tablestyle.css">
+    <link rel="stylesheet" href="./css/tablestyle.css">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <style>
         td{
@@ -62,11 +62,11 @@
                 <tbody>
                     <tr>
                         <td class="table-header">　</td>
-                        <td class="table-header"><h3 class="holeA">ホールA</h3></td>
-                        <td class="table-header"><h3 class="holeB">ホールB</h3></td>
-                        <td class="table-header"><h3 class="holeC">ホールC</h3></td>
-                        <td class="table-header"><h3 class="roomA">ルームA</h3></td>
-                        <td class="table-header"><h3 class="roomB">ルームB</h3></td>
+                        <td class="table-header"><h3 class="holeA">ルームA</h3></td>
+                        <td class="table-header"><h3 class="holeB">ルームB</h3></td>
+                        <td class="table-header"><h3 class="holeC">ルームC</h3></td>
+                        <td class="table-header"><h3 class="roomA">ルームD</h3></td>
+                        <td class="table-header"><h3 class="roomB">ルームE</h3></td>
                     </tr>
                     <tr>
                         <td class="timeText">13：30～<br>14：30</td>
@@ -867,7 +867,7 @@
         sessionBlock.forEach(value => {
             value.addEventListener('click', e => {
                 value.style.boxshadow = 'inset '+ 9 +'px '+ 9 +'px 10px 3px #000';
-                location.href = './twitter.html?s=${e.target.id}';
+                location.href = `./twitter.html?s=${e.target.id}`;;
             })
         })
 </script>
