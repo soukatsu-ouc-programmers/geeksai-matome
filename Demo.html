@@ -866,9 +866,10 @@
         const sessionBlock = document.querySelectorAll('.sessionBlock');
         sessionBlock.forEach(value => {
             value.addEventListener('click', e => {
-                value.style.boxshadow = 'inset '+ 9 +'px '+ 9 +'px 10px 3px #000';
+                // value.style.boxshadow = 'inset '+ 9 +'px '+ 9 +'px 10px 3px #000';
                 location.href = `./twitter.html?s=${e.target.id}`;;
             })
+            console.log('終了')
         })
 </script>
 </html>
