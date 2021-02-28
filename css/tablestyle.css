@@ -96,6 +96,9 @@ h2 {
     -6px -6px 10px var(--highlight-color);
   color: var(--main-color);
 }
+table {
+  margin: 0 0 275px 0;
+}
 .Day {
   font-size: 50px;
   color: var(--main-color);
@@ -106,12 +109,10 @@ h2 {
   display: flex;
 }
 .roomA {
-  width: 318px;
   margin: 0px;
   color: var(--room-color);
 }
 .roomB {
-  width: 318px;
   margin: 0px;
   color: var(--room-color);
 }
@@ -121,17 +122,14 @@ h2 {
 }
 
 .holeA {
-  width: 318px;
   margin: 0px;
   color: var(--hall-color-a);
 }
 .holeB {
-  width: 318px;
   margin: 0px;
   color: var(--hall-color-b);
 }
 .holeC {
-  width: 318px;
   margin: 0px;
   color: var(--hall-color-c);
 }
@@ -158,9 +156,9 @@ h3:not(.info > h3) {
 
 .sessionBlock {
   width: 298px;
-  margin: 10px auto 78px auto;
+  margin: 10px auto 10px auto; 
   padding: 20px 35px;
-
+  cursor: pointer;
   text-align: center;
   height: 189px;
   border-radius: 36px;
@@ -180,9 +178,14 @@ h3:not(.info > h3) {
 /* 使い方のとこ */
 .use {
   width: 100%;
-  height: 300px;
+  height: 150px;
+  font-size: 25px;
   margin: 0;
   background-color: #5f6c7b;
+  color: var(--highlight-color);
+}
+h5{
+  font-size: 30px;
 }
 
 footer {
