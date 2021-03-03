@@ -7,7 +7,7 @@ const app = express();
 app.use(express.static("public"));
 
 app.get("/db/", (req, res) => {
-  res.send("hello");
+  // res.send("hello");
   db.pool.connect((err, client) => {
     if (err) {
       console.log(err);
