@@ -7,4 +7,7 @@ exports.pool = new pg.Pool({
   user: process.env.DB_USER,
   port: 5432,
   password: process.env.DB_PASS,
+  ssl: {
+    rejectUnauthorized: false
+  }
 });
