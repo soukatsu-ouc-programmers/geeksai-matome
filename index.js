@@ -11,9 +11,11 @@ app.get("/db/", (req, res) => {
   db.pool.connect((err, client) => {
     if (err) {
       console.log(err);
+      res.send(err);
     } else {
       client.query("SELECT name FROM test", (err, result) => {
         console.log(result.rows);
+        res.send(result.rows);
       });
     }
   });
