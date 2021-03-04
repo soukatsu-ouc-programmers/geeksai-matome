@@ -12,7 +12,7 @@ app.get("/db/", (req, res) => {
     if (err) {
       console.log(err);
     } else {
-      client.query("SELECT name FROM rank", (err, result) => {
+      client.query("SELECT name FROM test", (err, result) => {
         console.log(result.rows);
       });
     }
