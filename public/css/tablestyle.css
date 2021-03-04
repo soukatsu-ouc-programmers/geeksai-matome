@@ -168,6 +168,7 @@ h3:not(.info > h3) {
 }
 .sessionText {
   font-size: 11px;
+  pointer-events: none;
 }
 .sessionText > h4 {
   font-size: 17px;
