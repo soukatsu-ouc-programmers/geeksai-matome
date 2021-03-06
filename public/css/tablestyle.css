@@ -30,6 +30,10 @@ header {
   display: flex;
   align-items: center;
 }
+a:link,a:visited,a:hover,a:active {
+  color: var(--highlight-color);
+  text-decoration: none;
+}
 .main{
     padding-top: 148px;
 }
