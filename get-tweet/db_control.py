@@ -4,6 +4,8 @@ from sqlalchemy import *
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
+data_list = ['abe', 'kaito', 'haruka']
+
 # conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 
 DATABASE_URL = os.getenv('DATABASE_URL')
@@ -42,16 +44,19 @@ session = SessionClass()
 # actor.first_name = 'yuma'
 # actor.last_name = 'kasahara'
 
-sample = Test(name='sasaki')
+# sample = Test(name='sasaki')
+session.bulk_save_objects(
+    [Test(name=d) for d in data_list], return_defaults=True
+)
 
 # session.add(actor)
-session.add(sample)
+# session.add(sample)
 # query = session.query(Actor)
-query = session.query(Test)
+# query = session.query(Test)
 
 session.commit()
-my_actor = query.first()
-print(my_actor.name)
+# my_actor = query.first()
+# print(my_actor.name)
 
 # q = 'select * from test'
 # q = 'insert into test (name) values (\'yuma2\');'
