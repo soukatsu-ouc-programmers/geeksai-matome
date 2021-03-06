@@ -51,7 +51,7 @@ query = session.query(Test)
 
 session.commit()
 my_actor = query.first()
-print(my_actor.first_name)
+print(my_actor.name)
 
 # q = 'select * from test'
 # q = 'insert into test (name) values (\'yuma2\');'
