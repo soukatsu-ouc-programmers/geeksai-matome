@@ -1,7 +1,7 @@
 """
 API使うやつ
 """
-# import config
+import config
 from requests_oauthlib import OAuth1Session
 import json
 from datetime import *
@@ -26,7 +26,7 @@ class Tweet(Base):
     __tablename__ = room
     id = Column(Integer, primary_key=True)
     tweet_str_id = Column(TEXT)
-    created_at = Column(DATETIME)
+    created_at = Column(TIMESTAMP)
 
 SessionClass = sessionmaker(bind=engine)
 session = SessionClass()
@@ -35,10 +35,14 @@ session = SessionClass()
 Base.metadata.create_all(engine)
 
 # Twitterからデータ取得
-api_key = os.getenv('TW_API_KEY')
-api_secret_key = os.getenv('TW_API_SECRET_KEY')
-access_token = os.getenv('TW_ACCESS_TOKEN')
-access_token_secret = os.getenv('TW_ACCESS_TOKEN_SECRET')
+# api_key = os.getenv('TW_API_KEY')
+# api_secret_key = os.getenv('TW_API_SECRET_KEY')
+# access_token = os.getenv('TW_ACCESS_TOKEN')
+# access_token_secret = os.getenv('TW_ACCESS_TOKEN_SECRET')
+api_key = config.TW_API_KEY
+api_secret_key = config.TW_API_SECRET_KEY
+access_token = config.TW_ACCESS_TOKEN
+access_token_secret = config.TW_ACCESS_TOKEN_SECRET
 
 twitter = OAuth1Session(api_key, api_secret_key, access_token, access_token_secret)
 
@@ -53,11 +57,14 @@ tweets = json.loads(res.text)
 store_data = [
         Tweet(tweet_str_id=v['id_str'],
         # 'tweet_time': datetime.strptime(v['created_at'], '%a %b %d %H:%M:%S %z %Y').astimezone(timezone(timedelta(hours=+9))).strftime('%Y-%m-%d %H:%M:%S')
-        'tweet_time': datetime.strptime(v['created_at'], '%a %b %d %H:%M:%S %z %Y').astimezone(timezone(timedelta(hours=+9)))
+        created_at=datetime.strptime(v['created_at'], '%a %b %d %H:%M:%S %z %Y').astimezone(timezone(timedelta(hours=+9)))
          ) for v in tweets['statuses']]
 
+# session.bulk_save_objects(
+#     [Test(name=d) for d in data_list], return_defaults=True
+# )
 session.bulk_save_objects(
-    [Test(name=d) for d in data_list], return_defaults=True
+    store_data, return_defaults=True
 )
 
 session.commit()
