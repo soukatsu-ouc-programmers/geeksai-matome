@@ -1,7 +1,7 @@
 """
 API使うやつ
 """
-import config
+# import config
 from requests_oauthlib import OAuth1Session
 import json
 from datetime import *
@@ -35,14 +35,14 @@ session = SessionClass()
 Base.metadata.create_all(engine)
 
 # Twitterからデータ取得
-# api_key = os.getenv('TW_API_KEY')
-# api_secret_key = os.getenv('TW_API_SECRET_KEY')
-# access_token = os.getenv('TW_ACCESS_TOKEN')
-# access_token_secret = os.getenv('TW_ACCESS_TOKEN_SECRET')
-api_key = config.TW_API_KEY
-api_secret_key = config.TW_API_SECRET_KEY
-access_token = config.TW_ACCESS_TOKEN
-access_token_secret = config.TW_ACCESS_TOKEN_SECRET
+api_key = os.getenv('TW_API_KEY')
+api_secret_key = os.getenv('TW_API_SECRET_KEY')
+access_token = os.getenv('TW_ACCESS_TOKEN')
+access_token_secret = os.getenv('TW_ACCESS_TOKEN_SECRET')
+# api_key = config.TW_API_KEY
+# api_secret_key = config.TW_API_SECRET_KEY
+# access_token = config.TW_ACCESS_TOKEN
+# access_token_secret = config.TW_ACCESS_TOKEN_SECRET
 
 twitter = OAuth1Session(api_key, api_secret_key, access_token, access_token_secret)
 
