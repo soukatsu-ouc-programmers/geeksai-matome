@@ -13,7 +13,8 @@ app.get("/db/", (req, res) => {
       console.log(err);
       res.send(err);
     } else {
-      client.query("SELECT name FROM test", (err, result) => {
+      // client.query("SELECT name FROM test", (err, result) => {
+      client.query("SELECT * FROM tracka", (err, result) => {
         console.log(result.rows);
         res.send(result.rows);
       });
