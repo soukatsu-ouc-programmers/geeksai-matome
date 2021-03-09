@@ -17,7 +17,7 @@ app.get("/db/", (req, res) => {
       client.query("SELECT * FROM tracka", (err, result) => {
         // console.log(result.rows);
         // res.send(result.rows.slice(0, 10));
-        res.send(result.rows);
+        res.send(result.rows.slice(0, 10));
       });
     }
   });

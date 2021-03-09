@@ -8,7 +8,8 @@
     <title>Tweetまとめ</title>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+    </script>
 </head>
 
 <body>
@@ -75,8 +76,7 @@
             <a v-bind:href="`https://twitter.com/user/status/${data.id_str}`"></a>
         </blockquote>
     </div> -->
-    <script id="twitter-wjs" type="text/javascript" async defer src="//platform.twitter.com/widgets.js"></script>
-</script>
+
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
