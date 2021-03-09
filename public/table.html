@@ -7,12 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/tablestyle.css">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <style>
         td{
             padding: 10px 20px;
         }
     </style>
     <title>技育祭おまとめさん</title>
+    <script type="text/javascript">
+        $(function() {
+            var pageTop = $('.page-top');
+            pageTop.hide();
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 600) {
+                    pageTop.fadeIn();
+                } else {
+                    pageTop.fadeOut();
+                }
+            });
+            pageTop.click(function () {
+                $('body, html').animate({scrollTop:0}, 500, 'swing');
+                return false;
+            });
+        });
+        </script>
 </head>
 
 <body>
@@ -21,28 +40,38 @@
         <h1>
             <a href="table.html">技育祭おまとめさん</a>
         </h1>
-        <ul class="day-list">
-            <li class="header-list-item">
-                <a href="#DAY1">Day1</a>
-            </li>
-            <li class="header-list-item">
-                <a href="#DAY2">Day2</a>
-            </li>
-            <li class="header-list-item">
-                <a href="#DAY3">Day3</a>
-            </li>
-        </ul>
-        <ul class="nav-list">
-            <li class="header-list-item">
-                <a href="#USE">使い方</a>
-            </li>
-            <li class="header-list-item">
-                <a href="https://talent.supporterz.jp/geeksai/2021/" target="_blank">技育祭公式サイト</a>
-            </li>
-            <li class="header-list-item">
-                <a href="https://github.com/soukatsu-ouc-programmers/geeksai-matome" target="_blank">Github</a>
-            </li>
-        </ul>
+
+        <div class="ham" id="ham">
+            <span class="ham_line ham_line1"></span>
+            <span class="ham_line ham_line2"></span>
+            <span class="ham_line ham_line3"></span>
+        </div>
+        <div class="menu_wrapper" id="menu_wrapper">
+            <div class="menu">
+            <ul class="day-list">
+                <li class="header-list-item">
+                    <a href="#DAY1">Day1</a>
+                </li>
+                <li class="header-list-item">
+                    <a href="#DAY2">Day2</a>
+                </li>
+                <li class="header-list-item">
+                    <a href="#DAY3">Day3</a>
+                </li>
+            </ul>
+            <ul class="nav-list">
+                <li class="header-list-item">
+                    <a href="#USE">使い方</a>
+                </li>
+                <li class="header-list-item">
+                    <a href="https://talent.supporterz.jp/geeksai/2021/" target="_blank">技育祭公式サイト</a>
+                </li>
+                <li class="header-list-item">
+                    <a href="https://github.com/soukatsu-ouc-programmers/geeksai-matome" target="_blank">Github</a>
+                </li>
+            </ul>
+            </div>
+        </div>
     </header>
     <div class="main">
             <!-- <div class="dayAndtitle">
@@ -53,6 +82,25 @@
                 <a>講演セッション</a>
             </h2>
         </div> -->
+        <!-- <table>
+            <thead>
+                <th colspan="1" class="Day" id="DAY0">DAY0</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="timeText">13：30～<br>14：30</td>
+                    <td colspan="5" class="Yellow">
+                        <div class="sessionBlock" id="holea_1">
+                            <div class="sessionText">
+                                <h4>
+                                    <a>前夜祭2021</a>
+                                </h4>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table> -->
             <table>
                 <thead>
                     <th colspan="1" class="Day" id="DAY1">DAY1</th>
@@ -830,14 +878,30 @@
             </li>
         </ul>
     </footer>
+        <p href="#" class="page-top">
+            <a>TOP</a>
+        </p>
 </body>
 <script>
         const sessionBlock = document.querySelectorAll('.sessionBlock');
         sessionBlock.forEach(value => {
             value.addEventListener('click', e => {
-                value.style.boxshadow = 'inset '+ 9 +'px '+ 9 +'px 10px 3px #000';
                 location.href = `./twitter.html?s=${e.target.id}`;
             })
         })
+
+        const ham = document.getElementById('ham');
+        ham.addEventListener('click', function() {
+	        ham.classList.toggle('clicked');
+            menu_wrapper.classList.toggle('clicked');
+        });
+
+        const header_list_item = document.querySelectorAll('.header-list-item');
+        header_list_item.forEach(value => {
+            value.addEventListener('click', e => {
+                ham.classList.toggle('clicked');
+                menu_wrapper.classList.toggle('clicked');
+            })
+        });
 </script>
 </html>
