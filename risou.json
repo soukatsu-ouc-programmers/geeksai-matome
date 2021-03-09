@@ -1,0 +1,49 @@
+{
+    "day1_1": [
+        {
+            "day": 1,
+            "loc": "ホールA",
+            "startTime": "13:30",
+            "endTime": "14:30",
+            "title": "これからの社会の変化と若者に求められるあり方とは",
+            "speaker": "東京大学大学院\n工学系研究科 教授\n松尾 豊",
+            "hashTag": "ホールA"
+        },
+        {
+            "day": 1,
+            "loc": "ホールB",
+            "startTime": "13:30",
+            "endTime": "14:30",
+            "title": "「オタ駆動開発」で夢を叶える\n〜煩悩のためにプログラミングを学んだ腐女子のキャリア〜",
+            "speaker": "Microsoft\nCloud Developer Advocate\n千代田 まどか(ちょまど)",
+            "hashTag": "ホールB"
+        },
+        {
+            "day": 1,
+            "loc": "ホールC",
+            "startTime": "13:30",
+            "endTime": "14:30",
+            "title": "高専エンジニアの学生起業25年史\n～起業家という人生の歩み方～",
+            "speaker": "さくらインターネット株式会社\n代表取締役社長\n田中 邦裕",
+            "hashTag": "ホールC"
+        },
+        {
+            "day": 1,
+            "loc": "Room1",
+            "startTime": "13:30",
+            "endTime": "14:30",
+            "title": "Goエンジニアから学ぶマイクロサービス実践入門",
+            "speaker": "株式会社マネーフォワード\n京都開発本部 テクニカルアーキテクトグループ リーダー\n櫻 勇人",
+            "hashTag": "Room1"
+        },
+        {
+            "day": 1,
+            "loc": "Room2",
+            "startTime": "13:30",
+            "endTime": "14:30",
+            "title": "Pythonで始めるスクレイピング",
+            "speaker": "Sansan株式会社\n高橋寛治\n（ゲスト講師）",
+            "hashTag": "Room2"
+        }
+    ]
+}
