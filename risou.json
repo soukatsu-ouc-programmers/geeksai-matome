@@ -34,7 +34,7 @@
             "endTime": "14:30",
             "title": "Goエンジニアから学ぶマイクロサービス実践入門",
             "speaker": "株式会社マネーフォワード\n京都開発本部 テクニカルアーキテクトグループ リーダー\n櫻 勇人",
-            "hashTag": "Room1"
+            "hashTag": "room1"
         },
         {
             "day": 1,
@@ -43,7 +43,7 @@
             "endTime": "14:30",
             "title": "Pythonで始めるスクレイピング",
             "speaker": "Sansan株式会社\n高橋寛治\n（ゲスト講師）",
-            "hashTag": "Room2"
+            "hashTag": "room2"
         }
     ]
 }
@@ -83,7 +83,7 @@
             "endTime": "15:40",
             "title": "言語にこだわらない サーバーサイドパフォーマンスチューニング",
             "speaker": "株式会社サイバーエージェント\nABEMAサーバーサイドエンジニア\n前田拓",
-            "hashTag": "Room1"
+            "hashTag": "room1"
         },
         {
             "day": 1,
@@ -92,7 +92,7 @@
             "endTime": "15:40",
             "title": "スマホゲームアプリ開発に必要な技術",
             "speaker": "CROOZ株式会社 執行役員\n最高技術責任者 CTO\nCROOZ SHOPLIST株式会社\n技術統括部長\n鈴木 優一",
-            "hashTag": "Room2"
+            "hashTag": "room2"
         }
     ]
 }
@@ -132,7 +132,7 @@
             "endTime": "16:50",
             "title": "初心者必見！機械学習エンジニアがあれこれ話します。\n～基礎から実社会応用まで～",
             "speaker": "フューチャー株式会社\nStrategic AI Group コンサルタント\n上野貴史\nStrategic AI Group コンサルタント\n玉木竜二",
-            "hashTag": "Room1"
+            "hashTag": "room1"
         },
         {
             "day": 1,
@@ -141,7 +141,7 @@
             "endTime": "16:50",
             "title": "マイクロサービス開発でDockerとGithub Actionsで工夫したこと",
             "speaker": "パーソルキャリア株式会社\nマルホトラ ヴィクラム",
-            "hashTag": "Room2"
+            "hashTag": "room2"
         }
     ]
 }
@@ -181,7 +181,7 @@
             "endTime": "18:00",
             "title": "Hello Elasticsearch! \n~ 分散検索/分析エンジン Elasticsearch の紹介と解説 ~",
             "speaker": "株式会社ゆめみ\nリードエンジニア\n川井健太",
-            "hashTag": "Room1"
+            "hashTag": "room1"
         },
         {
             "day": 1,
@@ -190,7 +190,7 @@
             "endTime": "18:00",
             "title": "バックエンドエンジニアが使用している技術スタックについて解説",
             "speaker": "株式会社Synspective\n吉海将太\n（ゲスト講師）",
-            "hashTag": "Room2"
+            "hashTag": "room2"
         }
     ]
 }
@@ -230,7 +230,7 @@
             "endTime": "14:30",
             "title": "業界が求めてるアプリエンジニアとは 〜新卒でAmebaのアプリエンジニアになった二人の歩み方〜",
             "speaker": "株式会社サイバーエージェント\n西村 大河\n小野 歩",
-            "hashTag": "Room1"
+            "hashTag": "room1"
         },
         {
             "day": 2,
@@ -239,7 +239,7 @@
             "endTime": "14:30",
             "title": "スマホゲーム企画開発の実体験型ワークショップ",
             "speaker": "芸者東京株式会社\nCEO 田中 泰生\n開発者 金子 嘉寿樹\n開発者 小林 賢矢",
-            "hashTag": "Room2"
+            "hashTag": "room2"
         }
     ]
 }
@@ -279,7 +279,7 @@
             "endTime": "15:40",
             "title": "ベイズモデリングによる機械学習入門～センサーデータ解析を題材に～",
             "speaker": "アクセンチュア株式会社\nビジネスコンサルティング本部\nAIグループ プリンシパル\n須山 敦志",
-            "hashTag": "Room1"
+            "hashTag": "room1"
         },
         {
             "day": 2,
@@ -288,7 +288,7 @@
             "endTime": "15:40",
             "title": "インターネットカンパニーのインフラ環境のリアル",
             "speaker": "グリー株式会社\n開発本部\nインフラストラクチャ部\n舟橋 弘兼、後藤 浩行\n岸田 祥崇、和田 英二",
-            "hashTag": "Room2"
+            "hashTag": "room2"
         }
     ]
 }
@@ -328,7 +328,7 @@
             "endTime": "16:50",
             "title": "ある日「Webエンジニアなら、Webサーバーは作れますよね」と言われたら？ ~ 3つのJVM言語で作って学ぶ",
             "speaker": "株式会社ビズリーチ\nHRMOS事業部 EXプロダクト部\nSurveyグループ MGR\n田所 駿佑",
-            "hashTag": "Room1"
+            "hashTag": "room1"
         },
         {
             "day": 2,
@@ -337,7 +337,7 @@
             "endTime": "16:50",
             "title": "大規模システムの裏側にあるリアル～レガシー脱却への挑戦をエンジニアが教えます～",
             "speaker": "フューチャー株式会社\nTechnology Innovation Group\nシニアコンサルタント岩崎裕太\nコンサルタント中村祥有",
-            "hashTag": "Room2"
+            "hashTag": "room2"
         }
     ]
 }
@@ -377,7 +377,7 @@
             "endTime": "18:00",
             "title": "ミクシィGitChallengeイベント番外編！Git経験者でも正解率10％の難問クイズ式講義",
             "speaker": "株式会社ミクシィ\n開発本部インフラ室\n映像技術グループ\n藤田朱門",
-            "hashTag": "Room1"
+            "hashTag": "room1"
         },
         {
             "day": 2,
@@ -386,7 +386,7 @@
             "endTime": "18:00",
             "title": "k8sコトハジメ！AzureでサクッとKubernatesを始めてみよう",
             "speaker": "株式会社FIXER\nCloud Solutions Engineer\n冨本優介",
-            "hashTag": "Room2"
+            "hashTag": "room2"
         }
     ]
 }
@@ -426,8 +426,8 @@
             "endTime": "12:00",
             "title": "実施なし",
             "speaker": "",
-            "hashTag": "Room1"
-        }
+            "hashTag": "room1"
+        },
         {
             "day": 3,
             "loc": "Room2",
@@ -435,7 +435,7 @@
             "endTime": "12:00",
             "title": "実施なし",
             "speaker": "",
-            "hashTag": "Room2"
+            "hashTag": "room2"
         }
     ]
 }
@@ -449,7 +449,7 @@
             "title": "CTOが語る、学生が個人開発でイケてる成果物を作るコツ",
             "speaker": "株式会社VOYAGE GROUP(CARTA HOLDINGS) 取締役CTO\n日本CTO協会 理事\n小賀 昌法",
             "hashTag": "ホールA"
-        }
+        },
         {
             "day": 3,
             "loc": "ホールB",
@@ -475,7 +475,7 @@
             "endTime": "14:30",
             "title": "グローバルなエンジニアになるための英語入門",
             "speaker": "AVA Intelligence\n小峰太一\n（ゲスト講師）",
-            "hashTag": "Room1"
+            "hashTag": "room1"
         },
         {
             "day": 3,
@@ -484,7 +484,7 @@
             "endTime": "14:30",
             "title": "実施なし",
             "speaker": "",
-            "hashTag": "Room2"
+            "hashTag": "room2"
         }
     ]
 }
@@ -524,7 +524,7 @@
             "endTime": "15:40",
             "title": "開発サイクルを爆速に！Azure DevOpsでビルド&デプロイを自動化",
             "speaker": "株式会社FIXER\nCloud Solutions Engineer\n河野光司",
-            "hashTag": "Room1"
+            "hashTag": "room1"
         },
         {
             "day": 3,
@@ -533,7 +533,7 @@
             "endTime": "15:40",
             "title": "ひとりで作る画像検索システム",
             "speaker": "OLTA株式会社\n山際康貴\n（ゲスト講師）",
-            "hashTag": "Room2"
+            "hashTag": "room2"
         }
     ]
 }
@@ -573,7 +573,7 @@
             "endTime": "16:50",
             "title": "はじめてでもわかる！コンテナ入門 - 社内研修公開しちゃいます -",
             "speaker": "GMOインターネット株式会社\nデベロッパーエバンジェリスト\n元内 柊也",
-            "hashTag": "Room1"
+            "hashTag": "room1"
         },
         {
             "day": 3,
@@ -582,7 +582,7 @@
             "endTime": "16:50",
             "title": "ネイティブアプリテックリードによる「アプリ開発における新技術の取り入れ方」",
             "speaker": "LIFULL HOME'S事業本部 PE部 PE4ユニット 開発7グループ\nスペシャリスト（ネイティブアプリ テックリード）\n菊地 慧",
-            "hashTag": "Room2"
+            "hashTag": "room2"
         }
     ]
 }
@@ -622,7 +622,7 @@
             "endTime": "18:00",
             "title": "スマホゲーム企画開発の実体験型ワークショップ",
             "speaker": "芸者東京株式会社\nCEO 田中 泰生\n開発者 金子 嘉寿樹\n開発者 小林 賢矢",
-            "hashTag": "Room1"
+            "hashTag": "room1"
         },
         {
             "day": 3,
@@ -631,7 +631,7 @@
             "endTime": "18:00",
             "title": "Webアプリ開発入門者必見！\nFirebase入門！|nReact + Firebase Realtime Databaseの|nデプロイまでをライブコーディングで公開！",
             "speaker": "技育プロジェクト\nハッカソン事務局\n三浦 裕典",
-            "hashTag": "Room2"
+            "hashTag": "room2"
         }
     ]
 }
