@@ -8,7 +8,7 @@
     <title>Tweetまとめ</title>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 </head>
 
@@ -62,17 +62,21 @@
                 <a href="https://twitter.com/sana_natori/status/1364720183688929280"></a>
             </blockquote> -->
             <!-- <blockquote class="twitter-tweet" v-for="data in tweetData['tweet']"> -->
-            <blockquote class="twitter-tweet" v-for="data in tweetData">
-                <!-- api用 -->
-                <!-- <a v-bind:href="`https://twitter.com/user/status/${data.id_str}`"></a> -->
-                <!-- <a v-bind:href="`https://twitter.com/user/status/${data.conversation_id}`"></a> -->
-                <a v-bind:href="`https://twitter.com/user/status/${data.tweet_str_id}?ref_src=twsrc%5Etfw`"></a>
-            </blockquote>
+
+            <!-- <blockquote class="twitter-tweet" v-for="data in tweetData"> -->
+            <!-- api用 -->
+            <!-- <a v-bind:href="`https://twitter.com/user/status/${data.id_str}`"></a> -->
+            <!-- <a v-bind:href="`https://twitter.com/user/status/${data.conversation_id}`"></a> -->
+            <!-- <a v-bind:href="`https://twitter.com/user/status/${data.tweet_str_id}?ref_src=twsrc%5Etfw`"></a> -->
+            <!-- </blockquote> -->
+
             <!-- <blockquote class="twitter-tweet">
                 <p lang="ja" dir="ltr">長文感想note要求したら三度の飯取り上げられてワロタ</p>&mdash; 名取さな🍆お誕生日イベント感謝感謝！ (@sana_natori) <a
                     href="https://twitter.com/sana_natori/status/1369271390646411268?ref_src=twsrc%5Etfw">March 9,
                     2021</a>
             </blockquote> -->
+
+            <div class="tweet-container" v-for="data in tweetData"></div>
         </div>
     </div>
 
@@ -115,17 +119,31 @@
                     // const url = './js/data/roomb/session_1.json'
                     const url = `./js/data/${room}/session_${session}.json`
                     // const url = `./db/`
-                    await axios.get(url).then(x => { this.tweetData = x.data })
+                    // await axios.get(url).then(x => { this.tweetData = x.data })
+                    await axios.get(url).then(x => { this.tweetData = x.data['tweet'] })
                     // this.tweetIds = tweetData.reduce((acc, value, index) => {
                     //     acc.push(value['user']['id']);
                     //     return acc;
                     // }, []);
+                    console.log(this.tweetData)
+                    document.querySelectorAll('.tweet-container').forEach((v, i) => {
+                        console.log(this.tweetData[i]['conversation_id']);
+                        twttr.widgets.createTweet(
+                            this.tweetData[i]['conversation_id'],
+                            v,
+                            {
+                                theme: "dark"
+                            }
+                        );
+                    });
                 }
             },
             mounted() {
                 this.getTweetData();
             }
         });
+
+
     </script>
 </body>
 
