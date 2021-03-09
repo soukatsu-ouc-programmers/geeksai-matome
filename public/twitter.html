@@ -117,19 +117,20 @@
                 async getTweetData() {
                     // const url = './js/data/api-out.json'
                     // const url = './js/data/roomb/session_1.json'
-                    const url = `./js/data/${room}/session_${session}.json`
-                    // const url = `./db/`
-                    // await axios.get(url).then(x => { this.tweetData = x.data })
-                    await axios.get(url).then(x => { this.tweetData = x.data['tweet'] })
+                    // const url = `./js/data/${room}/session_${session}.json`
+                    const url = `./db/`
+                    await axios.get(url).then(x => { this.tweetData = x.data })
+                    // await axios.get(url).then(x => { this.tweetData = x.data['tweet'] })
                     // this.tweetIds = tweetData.reduce((acc, value, index) => {
                     //     acc.push(value['user']['id']);
                     //     return acc;
                     // }, []);
                     console.log(this.tweetData)
                     document.querySelectorAll('.tweet-container').forEach((v, i) => {
-                        console.log(this.tweetData[i]['conversation_id']);
+                        // console.log(this.tweetData[i]['tweet_str_id']);
                         twttr.widgets.createTweet(
-                            this.tweetData[i]['conversation_id'],
+                            // this.tweetData[i]['conversation_id'],
+                            this.tweetData[i]['tweet_str_id'],
                             v,
                             {
                                 align: "center"
