@@ -113,8 +113,8 @@
                 async getTweetData() {
                     // const url = './js/data/api-out.json'
                     // const url = './js/data/roomb/session_1.json'
-                    // const url = `./js/data/${room}/session_${session}.json`
-                    const url = `./db/`
+                    const url = `./js/data/${room}/session_${session}.json`
+                    // const url = `./db/`
                     await axios.get(url).then(x => { this.tweetData = x.data })
                     // this.tweetIds = tweetData.reduce((acc, value, index) => {
                     //     acc.push(value['user']['id']);
