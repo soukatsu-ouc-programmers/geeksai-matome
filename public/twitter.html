@@ -62,17 +62,17 @@
                 <a href="https://twitter.com/sana_natori/status/1364720183688929280"></a>
             </blockquote> -->
             <!-- <blockquote class="twitter-tweet" v-for="data in tweetData['tweet']"> -->
-            <!-- <blockquote class="twitter-tweet" v-for="data in tweetData"> -->
+            <blockquote class="twitter-tweet" v-for="data in tweetData">
                 <!-- api用 -->
                 <!-- <a v-bind:href="`https://twitter.com/user/status/${data.id_str}`"></a> -->
                 <!-- <a v-bind:href="`https://twitter.com/user/status/${data.conversation_id}`"></a> -->
-                <!-- <a v-bind:href="`https://twitter.com/user/status/${data.tweet_str_id}?ref_src=twsrc%5Etfw`"></a> -->
-            <!-- </blockquote> -->
-            <blockquote class="twitter-tweet">
+                <a v-bind:href="`https://twitter.com/user/status/${data.tweet_str_id}?ref_src=twsrc%5Etfw`"></a>
+            </blockquote>
+            <!-- <blockquote class="twitter-tweet">
                 <p lang="ja" dir="ltr">長文感想note要求したら三度の飯取り上げられてワロタ</p>&mdash; 名取さな🍆お誕生日イベント感謝感謝！ (@sana_natori) <a
                     href="https://twitter.com/sana_natori/status/1369271390646411268?ref_src=twsrc%5Etfw">March 9,
                     2021</a>
-            </blockquote>
+            </blockquote> -->
         </div>
     </div>
 
