@@ -43,11 +43,11 @@
         <div class="sessionTitle">
             <div class="sessionText">
                 <h4>
-                    <!-- <a>これからの社会の変化と若者に求められるあり方とは</a> -->
-                    <a>{{ tweetData["title"] }}</a>
+                    <a>これからの社会の変化と若者に求められるあり方とは</a>
+                    <!-- <a>{{ tweetData["title"] }}</a> -->
                 </h4>
-                <!-- <a>東京大学大学院工学系研究科 教授　松尾 豊</a> -->
-                <a>{{ tweetData["speaker"] }}</a>
+                <a>東京大学大学院工学系研究科 教授　松尾 豊</a>
+                <!-- <a>{{ tweetData["speaker"] }}</a> -->
             </div>
         </div>
 
@@ -60,10 +60,12 @@
             <!-- <blockquote class="twitter-tweet" v-for="data in tweetData">
                 <a href="https://twitter.com/sana_natori/status/1364720183688929280"></a>
             </blockquote> -->
-            <blockquote class="twitter-tweet" v-for="data in tweetData['tweet']">
+            <!-- <blockquote class="twitter-tweet" v-for="data in tweetData['tweet']"> -->
+            <blockquote class="twitter-tweet" v-for="data in tweetData">
                 <!-- api用 -->
                 <!-- <a v-bind:href="`https://twitter.com/user/status/${data.id_str}`"></a> -->
-                <a v-bind:href="`https://twitter.com/user/status/${data.conversation_id}`"></a>
+                <!-- <a v-bind:href="`https://twitter.com/user/status/${data.conversation_id}`"></a> -->
+                <a v-bind:href="`https://twitter.com/user/status/${data.tweet_str_id}`"></a>
             </blockquote>
         </div>
     </div>
@@ -89,24 +91,25 @@
         // 部屋と時間埋める
         const room_el = document.getElementById('room-name');
         const date_el = document.getElementById('date');
-        if (room == "rooma"){
+        if (room == "rooma") {
             room_el.textContent = 'ルームA'
         }
-        if (session == "3"){
+        if (session == "3") {
             date_el.textContent = '13:30～14:30'
         }
         var app = new Vue({
             el: '#app',
             // el: '#tweet-list',
             data: {
-                // tweetData: []
-                tweetData: {}
+                tweetData: []
+                // tweetData: {}
             },
             methods: {
                 async getTweetData() {
                     // const url = './js/data/api-out.json'
                     // const url = './js/data/roomb/session_1.json'
-                    const url = `./js/data/${room}/session_${session}.json`
+                    // const url = `./js/data/${room}/session_${session}.json`
+                    const url = `./db/`
                     await axios.get(url).then(x => { this.tweetData = x.data })
                     // this.tweetIds = tweetData.reduce((acc, value, index) => {
                     //     acc.push(value['user']['id']);
