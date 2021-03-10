@@ -16,8 +16,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ,
-    Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ,
+    Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif; */
   /* background-color: #fffffe; */
   background-color: var(--base-color);
 }
@@ -151,7 +151,8 @@ table {
 .holeC > .sessionBlock {
 }
 h3:not(.info > h3) {
-  width: 318px;
+  /* width: 318px; */
+  width: 298px;
   height: 68px;
   /* margin: 0px 19px 0px 0px; */
   margin: 20px;
@@ -165,9 +166,11 @@ h3:not(.info > h3) {
 }
 
 .sessionBlock {
+  display: table-cell;
   width: 298px;
+  /* width: 100%; */
   margin: 10px auto 10px auto; 
-  padding: 20px 35px;
+  padding: 35px 5px;
   cursor: pointer;
   text-align: center;
   height: 189px;
@@ -177,14 +180,14 @@ h3:not(.info > h3) {
     -9px -9px 13px var(--highlight-color);
 }
 .sessionText {
-  font-size: 11px;
   pointer-events: none;
-  
+  white-space: pre-wrap;
+  font-size: 10px;
 }
 .sessionText > h4 {
-  font-size: 17px;
+  font-size: 15px;
   text-align: center;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 /* 使い方のとこ */
@@ -213,7 +216,7 @@ footer {
   padding: 80px 4% 10px;
   font-size: 30px;
   background-color: var(--main-color);
-  color: #fffffe;
+  color: var(--base-color);
   top: 0;
   display: flex;
   align-items: center;
