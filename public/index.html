@@ -129,35 +129,12 @@
         </h5>
         <p>見たい時間割をクリック（またはタップ）して、講演中のみんなのツイートを見てみよう！<br>
             ルームごと、時間ごとに分かれているので見たい講演のツイートだけピンポイントで見られるよ！</p>
+        <img src="./img/Tukaikata1.png" alt="">
     </div>
 
     <!-- footer -->
     <footer>
-        <h1>
-            <a href="table.html">技育祭おまとめさん</a>
-        </h1>
-        <ul class="day-list">
-            <li class="header-list-item">
-                <a href="#DAY1">Day1</a>
-            </li>
-            <li class="header-list-item">
-                <a href="#DAY2">Day2</a>
-            </li>
-            <li class="header-list-item">
-                <a href="#DAY3">Day3</a>
-            </li>
-        </ul>
-        <ul class="nav-list">
-            <li class="header-list-item">
-                <a href="#USE">使い方</a>
-            </li>
-            <li class="header-list-item">
-                <a href="https://talent.supporterz.jp/geeksai/2021/" target="_blank">技育祭公式サイト</a>
-            </li>
-            <li class="header-list-item">
-                <a href="https://github.com/soukatsu-ouc-programmers/geeksai-matome" target="_blank">Github</a>
-            </li>
-        </ul>
+        <p>©うるうる美少女爆進中　2021</p>
     </footer>
     <p href="#" class="page-top">
         <a>TOP</a>
@@ -186,28 +163,7 @@
             }
         });
     </script>
-    <script>
-        const sessionBlock = document.querySelectorAll('.sessionBlock');
-        sessionBlock.forEach(value => {
-            value.addEventListener('click', e => {
-                location.href = `./twitter.html?s=${e.target.id}`;
-            })
-        })
-
-        const ham = document.getElementById('ham');
-        ham.addEventListener('click', function () {
-            ham.classList.toggle('clicked');
-            menu_wrapper.classList.toggle('clicked');
-        });
-
-        const header_list_item = document.querySelectorAll('.header-list-item');
-        header_list_item.forEach(value => {
-            value.addEventListener('click', e => {
-                ham.classList.toggle('clicked');
-                menu_wrapper.classList.toggle('clicked');
-            })
-        });
-    </script>
+    <script src="./js/humberger.js"></script>
 </body>
 
 </html>
