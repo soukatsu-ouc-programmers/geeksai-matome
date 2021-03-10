@@ -19,8 +19,9 @@ sched = BlockingScheduler()
 # def session5():
 #    print('This job is run every three minutes.')
 # @sched.scheduled_job('cron', hour=23, minute=20, args=['aaaaa'])
-def getTweet(key):
-   print(key)
-sched.add_job(getTweet, 'cron', hour=23, minute=25, args=['aaaaa'])
-sched.add_job(getTweet, 'cron', hour=23, minute=26, args=['bbbbb'])
+def getTweet(hashTag, test):
+   print(hashTag)
+   print(test)
+
+sched.add_job(getTweet, 'date', run_date=datetime(2021, 3, 11, 5, 31, 0), args=['aaaaa', 'bbbbbbbb'])
 sched.start()
