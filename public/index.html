@@ -12,6 +12,7 @@
     <style>
         td {
             padding: 10px 20px;
+            white-space: pre-wrap
         }
     </style>
     <title>技育祭おまとめさん</title>
@@ -106,7 +107,7 @@
                 <tr v-for="(time, timeKey) in day">
                     <td class="timeText">{{ time.startTime }}<br>{{ time.endTime }}</td>
                     <td v-for="session in time.sessions" v-bind:class="session.loc">
-                        <div class="sessionBlock" v-bind:id="`${session.loc}_${timeKey}`">
+                        <div class="sessionBlock" v-bind:id="`${session.loc}_${timeKey}`" v-on:click="jump">
                             <div class="sessionText">
                                 <h4>
                                     <a>{{ session.title }}</a>
@@ -174,6 +175,9 @@
                 async getSessionData() {
                     const url = `./js/data/session.json`
                     await axios.get(url).then(x => { this.sessionData = x.data })
+                },
+                jump(e) {
+                    location.href = `./twitter.html?s=${e.currentTarget.id}`
                 }
             },
             mounted() {
