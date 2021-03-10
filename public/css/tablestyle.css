@@ -298,6 +298,10 @@ footer {
 img{
   height: 60%;
 }
+
+.tw-contents{
+  margin-top: 148px;
+}
 @media screen and (max-width:900px) {
 
 header{
