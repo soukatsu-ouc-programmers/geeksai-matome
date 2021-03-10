@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tweetまとめ</title>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tablestyle.css">
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 </head>
 
 <body>
@@ -42,19 +41,19 @@
     </header>
     <div id="app">
         <div class="sessionTitle">
-            <div class="sessionText">
+            <div v-bind:class="`sessionText ${sessionData.loc}`">
                 <h4>
-                    <a>これからの社会の変化と若者に求められるあり方とは</a>
+                    <a>{{ sessionData.title }}</a>
                     <!-- <a>{{ tweetData["title"] }}</a> -->
                 </h4>
-                <a>東京大学大学院工学系研究科 教授　松尾 豊</a>
+                <a>{{ sessionData.speaker }}</a>
                 <!-- <a>{{ tweetData["speaker"] }}</a> -->
             </div>
         </div>
 
-        <div class="info">
-            <h3 id="room-name"></h3>
-            <h3 id="date">13：00～14：00</h3>
+        <div v-bind:class="`info ${sessionData.loc}`">
+            <h3 id="room-name">#{{ sessionData.hashTag }}</h3>
+            <h3 id="date">{{ sessionData.startTime }}～{{ sessionData.endTime }}</h3>
         </div>
 
         <div id="tweet-list">
@@ -92,25 +91,17 @@
     <script>
         const params = (new URL(document.location)).searchParams;
         const query = params.get('s');
-        // 部屋
-        const room = query.match(/room[a-z]/g);
-        // 何セッション目か
-        const session = query.match(/[0-9]+/g);
+        // s=holeA_Day1_1
+        const tmpArr = query.split('_');
+        // 分割
+        const [room, day, time] = tmpArr;
 
-        // 部屋と時間埋める
-        const room_el = document.getElementById('room-name');
-        const date_el = document.getElementById('date');
-        if (room == "rooma") {
-            room_el.textContent = 'ルームA'
-        }
-        if (session == "3") {
-            date_el.textContent = '13:30～14:30'
-        }
         var app = new Vue({
             el: '#app',
             // el: '#tweet-list',
             data: {
-                tweetData: []
+                tweetData: [],
+                sessionData: {}
                 // tweetData: {}
             },
             methods: {
@@ -137,10 +128,18 @@
                             }
                         );
                     });
+                },
+                async getSessionData() {
+                    const url = './js/data/session.json';
+                    allSession = {}
+                    await axios.get(url).then(x => { allSession = x.data });
+                    this.sessionData = allSession[day][time]['sessions'].find(v => v.loc == room)
+                    console.log(this.sessionData)
                 }
             },
             mounted() {
-                this.getTweetData();
+                // this.getTweetData();
+                this.getSessionData();
             }
         });
 
