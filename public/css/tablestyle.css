@@ -202,6 +202,7 @@ h3:not(.info > h3) {
   padding: 10px 0;
   margin: 50px auto;
   text-align: center;
+  color: var(--main-color);
   border-radius: 37px;
   background: var(--base-color);
   box-shadow: inset 5px 5px 10px var(--shadow-color),
@@ -217,10 +218,11 @@ h5 {
 footer {
   margin: 0;
   width: 100%;
-  padding: 80px 4% 10px;
+  padding: 0 4%;
   font-size: 30px;
   background-color: var(--main-color);
   color: var(--base-color);
+  font-size: 1rem;
   top: 0;
   display: flex;
   align-items: center;
@@ -460,5 +462,38 @@ img {
   .page-top a {
     display: initial;
     pointer-events: none;
+  }
+  #tweet-list {
+    /* margin: 0px 19px 0px 0px; */
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    vertical-align: middle;
+    border-radius: 61px;
+    background: var(--base-color);
+    box-shadow: inset 6px 6px 7px var(--shadow-color),
+      inset -6px -6px 7px var(--highlight-color);
+  }
+  #tweet-list > div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tw-contents{
+    padding: 0 2rem;
+  }
+  .sessionTitle h4{
+    font-size: 15px;
+  }
+  .info{
+    margin-bottom: 30px;
+  }
+  .info h3{
+    font-size: 15px;
+  }
+  .tw-contents .sessionTitle {
+    width: 100%;
   }
 }
