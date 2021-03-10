@@ -1,669 +1,619 @@
-[
-	{
-		"day": 1,
-		"loc": "ホールA",
-		"startTime": "13:30",
-		"endTime": "14:30",
-		"title": "これからの社会の変化と若者に求められるあり方とは",
-		"speaker": "東京大学大学院\n工学系研究科 教授\n松尾 豊",
-		"hashTag": "ホールA"
-	},
-	{
-		"day": 1,
-		"loc": "ホールA",
-		"startTime": "14:40",
-		"endTime": "15:40",
-		"title": "活躍するエンジニアに共通する7つの特徴",
-		"speaker": "株式会社ディー・エヌ・エー\n常務執行役員CTO\n小林 篤",
-		"hashTag": "ホールA"
-	},
-	{
-		"day": 1,
-		"loc": "ホールA",
-		"startTime": "15:50",
-		"endTime": "16:50",
-		"title": "Matzに聞きたい100のこと\n〜Rubyの父に聞く、エンジニアのキャリアとスキル〜",
-		"speaker": "Ruby開発者\nまつもと ゆきひろ",
-		"hashTag": "ホールA"
-	},
-	{
-		"day": 1,
-		"loc": "ホールA",
-		"startTime": "17:00",
-		"endTime": "18:00",
-		"title": "エンジニアとしてどう生きていくか\n〜20年の技術変遷から考える生存戦略〜",
-		"speaker": "グリー株式会社 取締役\n上級執行役員 最高技術責任者\n藤本 真樹",
-		"hashTag": "ホールA"
-	},
-	{
-		"day": 1,
-		"loc": "ホールB",
-		"startTime": "13:30",
-		"endTime": "14:30",
-		"title": "「オタ駆動開発」で夢を叶える\n〜煩悩のためにプログラミングを学んだ腐女子のキャリア〜",
-		"speaker": "Microsoft\nCloud Developer Advocate\n千代田 まどか(ちょまど)",
-		"hashTag": "ホールB"
-	},
-	{
-		"day": 1,
-		"loc": "ホールB",
-		"startTime": "14:40",
-		"endTime": "15:40",
-		"title": "難攻不落の未踏峰に挑む\n〜デジタルでアジャイルな銀行をゼロから作れ〜",
-		"speaker": "アクセンチュア株式会社\nテクノロジー コンサルティング本部\nマネジング・ディレクター　水上 廣敏",
-		"hashTag": "ホールB"
-	},
-	{
-		"day": 1,
-		"loc": "ホールB",
-		"startTime": "15:50",
-		"endTime": "16:50",
-		"title": "RedCoderのライブ競プロ\n～競プロ世界ランカーのアルゴリズム改善～",
-		"speaker": "AtCoder株式会社\n代表取締役社長\n高橋 直大（chokudai）",
-		"hashTag": "ホールB"
-	},
-	{
-		"day": 1,
-		"loc": "ホールB",
-		"startTime": "17:00",
-		"endTime": "18:00",
-		"title": "競プロスキルでビジネス無双\n〜誰もやらないのでエンジニアだけど営業から研究開発まで全部やります〜",
-		"speaker": "フューチャー株式会社\n最適化スペシャリスト\n塚本 祥太",
-		"hashTag": "ホールB"
-	},
-	{
-		"day": 1,
-		"loc": "ホールC",
-		"startTime": "13:30",
-		"endTime": "14:30",
-		"title": "高専エンジニアの学生起業25年史\n～起業家という人生の歩み方～",
-		"speaker": "さくらインターネット株式会社\n代表取締役社長\n田中 邦裕",
-		"hashTag": "ホールC"
-	},
-	{
-		"day": 1,
-		"loc": "ホールC",
-		"startTime": "14:40",
-		"endTime": "15:40",
-		"title": "今あえてゲームエンジニアになる理由\n〜AI、次世代SNS、グローバリゼーションとゲーム業界の関係について〜",
-		"speaker": "芸者東京株式会社\nCEO\n田中 泰生",
-		"hashTag": "ホールC"
-	},
-	{
-		"day": 1,
-		"loc": "ホールC",
-		"startTime": "15:50",
-		"endTime": "16:50",
-		"title": "日本におけるEdTechの今後の進化",
-		"speaker": "株式会社ドワンゴ\n顧問\n川上 量生",
-		"hashTag": "ホールC"
-	},
-	{
-		"day": 1,
-		"loc": "ホールC",
-		"startTime": "17:00",
-		"endTime": "18:00",
-		"title": "【AbemaTV CTOが学生向けに初登壇！】\n開局後5年のABEMAの裏側に広がるエンジニアリングの世界",
-		"speaker": "株式会社AbemaTV CTO\n西尾 亮太",
-		"hashTag": "ホールC"
-	},
-	{
-		"day": 1,
-		"loc": "Room1",
-		"startTime": "13:30",
-		"endTime": "14:30",
-		"title": "Goエンジニアから学ぶマイクロサービス実践入門",
-		"speaker": "株式会社マネーフォワード\n京都開発本部 テクニカルアーキテクトグループ リーダー\n櫻 勇人",
-		"hashTag": "Room1"
-	},
-	{
-		"day": 1,
-		"loc": "Room1",
-		"startTime": "14:40",
-		"endTime": "15:40",
-		"title": "言語にこだわらない サーバーサイドパフォーマンスチューニング",
-		"speaker": "株式会社サイバーエージェント\nABEMAサーバーサイドエンジニア\n前田拓",
-		"hashTag": "Room1"
-	},
-	{
-		"day": 1,
-		"loc": "Room1",
-		"startTime": "15:50",
-		"endTime": "16:50",
-		"title": "初心者必見！機械学習エンジニアがあれこれ話します。\n～基礎から実社会応用まで～",
-		"speaker": "フューチャー株式会社\nStrategic AI Group コンサルタント\n上野貴史\nStrategic AI Group コンサルタント\n玉木竜二",
-		"hashTag": "Room1"
-	},
-	{
-		"day": 1,
-		"loc": "Room1",
-		"startTime": "17:00",
-		"endTime": "18:00",
-		"title": "Hello Elasticsearch! \n~ 分散検索/分析エンジン Elasticsearch の紹介と解説 ~",
-		"speaker": "株式会社ゆめみ\nリードエンジニア\n川井健太",
-		"hashTag": "Room1"
-	},
-	{
-		"day": 1,
-		"loc": "Room2",
-		"startTime": "13:30",
-		"endTime": "14:30",
-		"title": "Pythonで始めるスクレイピング",
-		"speaker": "Sansan株式会社\n高橋寛治\n（ゲスト講師）",
-		"hashTag": "Room2"
-	},
-	{
-		"day": 1,
-		"loc": "Room2",
-		"startTime": "14:40",
-		"endTime": "15:40",
-		"title": "テーマ未定",
-		"speaker": "CROOZ株式会社",
-		"hashTag": "Room2"
-	},
-	{
-		"day": 1,
-		"loc": "Room2",
-		"startTime": "15:50",
-		"endTime": "16:50",
-		"title": "マイクロサービス開発でDockerとGithub Actionsで工夫したこと",
-		"speaker": "パーソルキャリア株式会社\nマルホトラ ヴィクラム",
-		"hashTag": "Room2"
-	},
-	{
-		"day": 1,
-		"loc": "Room2",
-		"startTime": "17:00",
-		"endTime": "18:00",
-		"title": "バックエンドエンジニアが使用している技術スタックについて解説",
-		"speaker": "株式会社Synspective\n吉海将太\n（ゲスト講師）",
-		"hashTag": "Room2"
-	},
-	{
-		"day": 2,
-		"loc": "ホールA",
-		"startTime": "13:30",
-		"endTime": "14:30",
-		"title": "FIXER創業 満10年！\n10年見てきたクラウドの進化と可能性",
-		"speaker": "株式会社FIXER\n代表取締役社長\n松岡 清一",
-		"hashTag": "ホールA"
-	},
-	{
-		"day": 2,
-		"loc": "ホールA",
-		"startTime": "14:40",
-		"endTime": "15:40",
-		"title": "〜ハイクラス人材向けサービスを運営するビズリーチのCTOが語る〜\n「市場価値の高いエンジニア」ってどんなエンジニア？",
-		"speaker": "株式会社ビズリーチ（Visionalグループ）\n執行役員/CTO\n外山英幸",
-		"hashTag": "ホールA"
-	},
-	{
-		"day": 2,
-		"loc": "ホールA",
-		"startTime": "15:50",
-		"endTime": "16:50",
-		"title": "超就活術\n〜つよつよエンジニアになる為の５つの絶対原則〜",
-		"speaker": "株式会社ゆめみ\n代表取締役\n片岡俊行",
-		"hashTag": "ホールA"
-	},
-	{
-		"day": 2,
-		"loc": "ホールA",
-		"startTime": "17:00",
-		"endTime": "18:00",
-		"title": "［1部］今求められる21世紀型エンジニアに必要なこと［2部］大好評につき今年も開催！若手6人のぶっちゃけトーク",
-		"speaker": "株式会社サイバーエージェント\n技術担当 常務執行役員\n長瀬 慶重",
-		"hashTag": "ホールA"
-	},
-	{
-		"day": 2,
-		"loc": "ホールB",
-		"startTime": "13:30",
-		"endTime": "14:30",
-		"title": "無駄なものをつくって稼ぐ方法",
-		"speaker": "無駄づくり発明家\nコンテンツクリエイター\n藤原 麻里菜",
-		"hashTag": "ホールB"
-	},
-	{
-		"day": 2,
-		"loc": "ホールB",
-		"startTime": "14:40",
-		"endTime": "15:40",
-		"title": "Goライブコーディング2021",
-		"speaker": "株式会社fluct CTO / 株式会社VOYAGE GROUP(CARTA HOLDINGS)\nみんなのGo言語共著者\n鈴木健太",
-		"hashTag": "ホールB"
-	},
-	{
-		"day": 2,
-		"loc": "ホールB",
-		"startTime": "15:50",
-		"endTime": "16:50",
-		"title": "これから必要とされるエンジニアになるために、知っておくべきこと",
-		"speaker": "パーソルキャリア株式会社\nサービス開発統括部\nエグゼクティブマネジャー\n岡本 邦宏",
-		"hashTag": "ホールB"
-	},
-	{
-		"day": 2,
-		"loc": "ホールB",
-		"startTime": "17:00",
-		"endTime": "18:00",
-		"title": "プログラム未経験から一人前のエンジニアとして活躍できるために学生のうちにやっておくべきこと",
-		"speaker": "CROOZ株式会社 執行役員\n最高技術責任者/CTO\nCROOZ SHOPLIST株式会社\n 技術統括部長\n鈴木 優一",
-		"hashTag": "ホールB"
-	},
-	{
-		"day": 2,
-		"loc": "ホールC",
-		"startTime": "13:30",
-		"endTime": "14:30",
-		"title": "新技術への向き合い方～幸せなエンジニアライフを送るための4箇条～",
-		"speaker": "株式会社マネーフォワード\n取締役執行役員 CTO\n中出 匠哉",
-		"hashTag": "ホールC"
-	},
-	{
-		"day": 2,
-		"loc": "ホールC",
-		"startTime": "14:40",
-		"endTime": "15:40",
-		"title": "学生時代に思い描いた4年後と今。\n〜学生時代の自分に伝えたい、エンジニアにとって本当に必要なコト〜",
-		"speaker": "株式会社ディー・エヌ・エー\n川邉 哲也\n池野 直人",
-		"hashTag": "ホールC"
-	},
-	{
-		"day": 2,
-		"loc": "ホールC",
-		"startTime": "15:50",
-		"endTime": "16:50",
-		"title": "CTOと一緒におしゃべりしましょう！\n〜ミク談出張版〜\nテーマ：エンジニアのモノ作り、活躍、評価について",
-		"speaker": "株式会社ミクシィ 取締役CTO\n村瀬 龍馬",
-		"hashTag": "ホールC"
-	},
-	{
-		"day": 2,
-		"loc": "ホールC",
-		"startTime": "17:00",
-		"endTime": "18:00",
-		"title": "",
-		"speaker": "",
-		"hashTag": "ホールC"
-	},
-	{
-		"day": 2,
-		"loc": "Room1",
-		"startTime": "13:30",
-		"endTime": "14:30",
-		"title": "業界が求めてるアプリエンジニアとは 〜新卒でAmebaのアプリエンジニアになった二人の歩み方〜",
-		"speaker": "株式会社サイバーエージェント\n西村 大河\n小野 歩",
-		"hashTag": "Room1"
-	},
-	{
-		"day": 2,
-		"loc": "Room1",
-		"startTime": "14:40",
-		"endTime": "15:40",
-		"title": "ベイズモデリングによる機械学習入門～センサーデータ解析を題材に～",
-		"speaker": "アクセンチュア株式会社\nビジネスコンサルティング本部\nAIグループ プリンシパル\n須山 敦志",
-		"hashTag": "Room1"
-	},
-	{
-		"day": 2,
-		"loc": "Room1",
-		"startTime": "15:50",
-		"endTime": "16:50",
-		"title": "ある日「Webエンジニアなら、Webサーバーは作れますよね」と言われたら？ ~ 3つのJVM言語で作って学ぶ",
-		"speaker": "株式会社ビズリーチ\nHRMOS事業部 EXプロダクト部\nSurveyグループ MGR\n田所 駿佑",
-		"hashTag": "Room1"
-	},
-	{
-		"day": 2,
-		"loc": "Room1",
-		"startTime": "17:00",
-		"endTime": "18:00",
-		"title": "ミクシィGitChallengeイベント番外編！Git経験者でも正解率10％の難問クイズ式講義",
-		"speaker": "株式会社ミクシィ\n開発本部インフラ室\n映像技術グループ\n藤田朱門",
-		"hashTag": "Room1"
-	},
-	{
-		"day": 2,
-		"loc": "Room2",
-		"startTime": "13:30",
-		"endTime": "14:30",
-		"title": "スマホゲーム企画開発の実体験型ワークショップ",
-		"speaker": "芸者東京株式会社\nCEO 田中 泰生\n開発者 金子 嘉寿樹\n開発者 小林 賢矢",
-		"hashTag": "Room2"
-	},
-	{
-		"day": 2,
-		"loc": "Room2",
-		"startTime": "14:40",
-		"endTime": "15:40",
-		"title": "インターネットカンパニーのインフラ環境のリアル",
-		"speaker": "グリー株式会社\n開発本部\nインフラストラクチャ部\n舟橋 弘兼、後藤 浩行\n岸田 祥崇、和田 英二",
-		"hashTag": "Room2"
-	},
-	{
-		"day": 2,
-		"loc": "Room2",
-		"startTime": "15:50",
-		"endTime": "16:50",
-		"title": "大規模システムの裏側にあるリアル～レガシー脱却への挑戦をエンジニアが教えます～",
-		"speaker": "フューチャー株式会社\nTechnology Innovation Group\nシニアコンサルタント岩崎裕太\nコンサルタント中村祥有",
-		"hashTag": "Room2"
-	},
-	{
-		"day": 2,
-		"loc": "Room2",
-		"startTime": "17:00",
-		"endTime": "18:00",
-		"title": "k8sコトハジメ！AzureでサクッとKubernatesを始めてみよう",
-		"speaker": "株式会社FIXER\nCloud Solutions Engineer\n冨本優介",
-		"hashTag": "Room2"
-	},
-	{
-		"day": 3,
-		"loc": "ホールA",
-		"startTime": "11:00",
-		"endTime": "12:00",
-		"title": "日本のけしからん行政系機関や大企業でけしからんサイバー技術開発を行なうことについて",
-		"speaker": "IPA サイバー技術研究室長\nNTT東日本 特殊局員\n登 大遊",
-		"hashTag": "ホールA"
-	},
-	{
-		"day": 3,
-		"loc": "ホールA",
-		"startTime": "13:30",
-		"endTime": "14:30",
-		"title": "CTOが語る、学生が個人開発でイケてる成果物を作るコツ",
-		"speaker": "株式会社VOYAGE GROUP(CARTA HOLDINGS) 取締役CTO\n日本CTO協会 理事\n小賀 昌法",
-		"hashTag": "ホールA"
-	},
-	{
-		"day": 3,
-		"loc": "ホールA",
-		"startTime": "14:40",
-		"endTime": "15:40",
-		"title": "2年で3億7000万人に遊ばれる\nスマホゲームの作り方",
-		"speaker": "芸者東京株式会社\nCEO\n田中 泰生",
-		"hashTag": "ホールA"
-	},
-	{
-		"day": 3,
-		"loc": "ホールA",
-		"startTime": "15:50",
-		"endTime": "16:50",
-		"title": "技術書執筆のススメ\n〜Only1なエンジニアになるためのセルフブランディング〜",
-		"speaker": "フューチャー株式会社\nシニアアーキテクト\n澁川喜規",
-		"hashTag": "ホールA"
-	},
-	{
-		"day": 3,
-		"loc": "ホールA",
-		"startTime": "17:00",
-		"endTime": "18:00",
-		"title": "ひろゆきだけど何か質問ある？",
-		"speaker": "元2ちゃんねる管理人\nひろゆき",
-		"hashTag": "ホールA"
-	},
-	{
-		"day": 3,
-		"loc": "ホールB",
-		"startTime": "11:00",
-		"endTime": "12:00",
-		"title": "スーパーコンピュータ富岳による10万ノード級のAIとSociety5.0へのインパクト",
-		"speaker": "理化学研究所 計算科学研究センター\nセンター長 東京工業大学 特任教授\n松岡 聡",
-		"hashTag": "ホールB"
-	},
-	{
-		"day": 3,
-		"loc": "ホールB",
-		"startTime": "13:30",
-		"endTime": "14:30",
-		"title": "これからのエンジニア／これからのDMM",
-		"speaker": "合同会社DMM.com\nVPoE\n大久保 寛",
-		"hashTag": "ホールB"
-	},
-	{
-		"day": 3,
-		"loc": "ホールB",
-		"startTime": "14:40",
-		"endTime": "15:40",
-		"title": "ただプログラマでありたい～夢中になれるプログラミングの楽しみ方～",
-		"speaker": "GMOインターネット株式会社\nデベロッパーエバンジェリスト\n成瀬 允宣",
-		"hashTag": "ホールB"
-	},
-	{
-		"day": 3,
-		"loc": "ホールB",
-		"startTime": "15:50",
-		"endTime": "16:50",
-		"title": "モダンフロントエンドの技術の追いかけ方 ~ OSS の魅力を添えて~",
-		"speaker": "株式会社ゆめみ\n取締役\n桑原聖仁",
-		"hashTag": "ホールB"
-	},
-	{
-		"day": 3,
-		"loc": "ホールB",
-		"startTime": "17:00",
-		"endTime": "18:00",
-		"title": "プログラミング以外にも重要なこと\n〜モノづくりキャリアの歩み方〜",
-		"speaker": "サイカCTO 是澤 太志\n時空テクノロジーズCEO 橋本 善久\nマクアケCTO 生内 洋平",
-		"hashTag": "ホールB"
-	},
-	{
-		"day": 3,
-		"loc": "ホールC",
-		"startTime": "11:00",
-		"endTime": "12:00",
-		"title": "",
-		"speaker": "",
-		"hashTag": "ホールC"
-	},
-	{
-		"day": 3,
-		"loc": "ホールC",
-		"startTime": "13:30",
-		"endTime": "14:30",
-		"title": "テーマ未定",
-		"speaker": "株式会社FIXER\n執行役員CSO\n岡安 英俊",
-		"hashTag": "ホールC"
-	},
-	{
-		"day": 3,
-		"loc": "ホールC",
-		"startTime": "14:40",
-		"endTime": "15:40",
-		"title": "LIFULL HOME'Sの開発現場から学ぶエンジニアとして活躍し評価されていくための方法",
-		"speaker": "株式会社LIFULL  CTO\n長沢 翼",
-		"hashTag": "ホールC"
-	},
-	{
-		"day": 3,
-		"loc": "ホールC",
-		"startTime": "15:50",
-		"endTime": "16:50",
-		"title": "これからの時代に必要な技術力とは\n〜プロダクトとビジネスの仮説検証の方法論〜",
-		"speaker": "reee株式会社\nCTO/共同創業者\n横路 隆",
-		"hashTag": "ホールC"
-	},
-	{
-		"day": 3,
-		"loc": "ホールC",
-		"startTime": "17:00",
-		"endTime": "18:00",
-		"title": "",
-		"speaker": "",
-		"hashTag": "ホールC"
-	},
-	{
-		"day": 3,
-		"loc": "Room1",
-		"startTime": "13:30",
-		"endTime": "14:30",
-		"title": "グローバルなエンジニアになるための英語入門",
-		"speaker": "AVA Intelligence\n小峰太一\n（ゲスト講師）",
-		"hashTag": "Room1"
-	},
-	{
-		"day": 3,
-		"loc": "Room1",
-		"startTime": "14:40",
-		"endTime": "15:40",
-		"title": "開発サイクルを爆速に！Azure DevOpsでビルド&デプロイを自動化",
-		"speaker": "株式会社FIXER\nCloud Solutions Engineer\n河野光司",
-		"hashTag": "Room1"
-	},
-	{
-		"day": 3,
-		"loc": "Room1",
-		"startTime": "15:50",
-		"endTime": "16:50",
-		"title": "はじめてでもわかる！コンテナ入門 - 社内研修公開しちゃいます -",
-		"speaker": "GMOインターネット株式会社\nデベロッパーエバンジェリスト\n元内 柊也",
-		"hashTag": "Room1"
-	},
-	{
-		"day": 3,
-		"loc": "Room1",
-		"startTime": "17:00",
-		"endTime": "18:00",
-		"title": "スマホゲーム企画開発の実体験型ワークショップ",
-		"speaker": "芸者東京株式会社\nCEO 田中 泰生\n開発者 金子 嘉寿樹\n開発者 小林 賢矢",
-		"hashTag": "Room1"
-	},
-	{
-		"day": 3,
-		"loc": "Room2",
-		"startTime": "13:30",
-		"endTime": "14:30",
-		"title": "",
-		"speaker": "",
-		"hashTag": "Room2"
-	},
-	{
-		"day": 3,
-		"loc": "Room2",
-		"startTime": "14:40",
-		"endTime": "15:40",
-		"title": "",
-		"speaker": "",
-		"hashTag": "Room2"
-	},
-	{
-		"day": 3,
-		"loc": "Room2",
-		"startTime": "15:50",
-		"endTime": "16:50",
-		"title": "ネイティブアプリテックリードによる「アプリ開発における新技術の取り入れ方」",
-		"speaker": "LIFULL HOME'S事業本部 PE部 PE4ユニット 開発7グループ\nスペシャリスト（ネイティブアプリ テックリード）\n菊地 慧",
-		"hashTag": "Room2"
-	},
-	{
-		"day": 3,
-		"loc": "Room2",
-		"startTime": "17:00",
-		"endTime": "18:00",
-		"title": "Webアプリ開発入門者必見！Firebase入門！React + Firebase Realtime Databaseのデプロイまでをライブコーディングで公開！",
-		"speaker": "技育プロジェクト\nハッカソン事務局\n三浦 裕典",
-		"hashTag": "Room2"
-	},
-	{
-		"day": 3,
-		"loc": "Room2",
-		"startTime": "17:00",
-		"endTime": "18:00",
-		"title": "Webアプリ開発入門者必見！Firebase入門！React + Firebase Realtime Databaseのデプロイまでをライブコーディングで公開！",
-		"speaker": "技育プロジェクト\nハッカソン事務局\n三浦 裕典",
-		"hashTag": "Room2"
-	},
-	{
-		"day": 1,
-		"startTime": "11:00",
-		"endTime": "12:00",
-		"title": "【プレコンテンツ】学生ライトニングトーク（DAY1）",
-		"hashTag": ""
-	},
-	{
-		"day": 1,
-		"startTime": "12:00",
-		"endTime": "13:00",
-		"title": "【プレコンテンツ】企業交流会（22卒向け）",
-		"hashTag": ""
-	},
-	{
-		"day": 1,
-		"startTime": "12:00",
-		"endTime": "13:00",
-		"title": "トークルーム",
-		"hashTag": ""
-	},
-	{
-		"day": 1,
-		"startTime": "13:10",
-		"endTime": "13:30",
-		"title": "【DAY1オープニング】技育祭にご参加する皆さんへ",
-		"hashTag": ""
-	},
-	{
-		"day": 1,
-		"startTime": "18:00",
-		"endTime": "19:00",
-		"title": "【懇親会】DAY1おつかれさまパーティー",
-		"hashTag": ""
-	},
-	{
-		"day": 2,
-		"startTime": "11:00",
-		"endTime": "12:00",
-		"title": "【プレコンテンツ】学生ライトニングトーク（DAY2）",
-		"hashTag": ""
-	},
-	{
-		"day": 2,
-		"startTime": "12:00",
-		"endTime": "13:00",
-		"title": "【プレコンテンツ】企業交流会（23卒〜向け）",
-		"hashTag": ""
-	},
-	{
-		"day": 2,
-		"startTime": "12:00",
-		"endTime": "13:00",
-		"title": "トークルーム",
-		"hashTag": ""
-	},
-	{
-		"day": 2,
-		"startTime": "13:10",
-		"endTime": "13:30",
-		"title": "【DAY2オープニング】平井大臣特別インタビュー",
-		"hashTag": ""
-	},
-	{
-		"day": 2,
-		"startTime": "18:00",
-		"endTime": "19:00",
-		"title": "【懇親会】DAY2おつかれさまパーティー",
-		"hashTag": ""
-	},
-	{
-		"day": 3,
-		"startTime": "12:10",
-		"endTime": "13:10",
-		"title": "スポンサーライトニングトーク",
-		"hashTag": ""
-	},
-	{
-		"day": 3,
-		"startTime": "13:10",
-		"endTime": "13:30",
-		"title": "DAY3スペシャルコンテンツ",
-		"hashTag": ""
-	},
-	{
-		"day": 3,
-		"startTime": "18:00",
-		"endTime": "19:00",
-		"title": "【懇親会】技育祭おつかれさまパーティー",
-		"hashTag": ""
-	}
-]
+{
+    "day1": {
+        "1": [
+            {
+                "day": 1,
+                "loc": "ホールA",
+                "startTime": "13:30",
+                "endTime": "14:30",
+                "title": "これからの社会の変化と若者に求められるあり方とは",
+                "speaker": "東京大学大学院\n工学系研究科 教授\n松尾 豊",
+                "hashTag": "ホールA"
+            },
+            {
+                "day": 1,
+                "loc": "ホールB",
+                "startTime": "13:30",
+                "endTime": "14:30",
+                "title": "「オタ駆動開発」で夢を叶える\n〜煩悩のためにプログラミングを学んだ腐女子のキャリア〜",
+                "speaker": "Microsoft\nCloud Developer Advocate\n千代田 まどか(ちょまど)",
+                "hashTag": "ホールB"
+            },
+            {
+                "day": 1,
+                "loc": "ホールC",
+                "startTime": "13:30",
+                "endTime": "14:30",
+                "title": "高専エンジニアの学生起業25年史\n～起業家という人生の歩み方～",
+                "speaker": "さくらインターネット株式会社\n代表取締役社長\n田中 邦裕",
+                "hashTag": "ホールC"
+            },
+            {
+                "day": 1,
+                "loc": "Room1",
+                "startTime": "13:30",
+                "endTime": "14:30",
+                "title": "Goエンジニアから学ぶマイクロサービス実践入門",
+                "speaker": "株式会社マネーフォワード\n京都開発本部 テクニカルアーキテクトグループ リーダー\n櫻 勇人",
+                "hashTag": "room1"
+            },
+            {
+                "day": 1,
+                "loc": "Room2",
+                "startTime": "13:30",
+                "endTime": "14:30",
+                "title": "Pythonで始めるスクレイピング",
+                "speaker": "Sansan株式会社\n高橋寛治\n（ゲスト講師）",
+                "hashTag": "room2"
+            }
+        ],
+        "2": [
+            {
+                "day": 1,
+                "loc": "ホールA",
+                "startTime": "14:40",
+                "endTime": "15:40",
+                "title": "活躍するエンジニアに共通する7つの特徴",
+                "speaker": "株式会社ディー・エヌ・エー\n常務執行役員CTO\n小林 篤",
+                "hashTag": "ホールA"
+            },
+            {
+                "day": 1,
+                "loc": "ホールB",
+                "startTime": "14:40",
+                "endTime": "15:40",
+                "title": "難攻不落の未踏峰に挑む\n〜デジタルでアジャイルな銀行をゼロから作れ〜",
+                "speaker": "アクセンチュア株式会社\nテクノロジー コンサルティング本部\nマネジング・ディレクター　水上 廣敏",
+                "hashTag": "ホールB"
+            },
+            {
+                "day": 1,
+                "loc": "ホールC",
+                "startTime": "14:40",
+                "endTime": "15:40",
+                "title": "今あえてゲームエンジニアになる理由\n〜AI、次世代SNS、グローバリゼーションとゲーム業界の関係について〜",
+                "speaker": "芸者東京株式会社\nCEO\n田中 泰生",
+                "hashTag": "ホールC"
+            },
+            {
+                "day": 1,
+                "loc": "Room1",
+                "startTime": "14:40",
+                "endTime": "15:40",
+                "title": "言語にこだわらない サーバーサイドパフォーマンスチューニング",
+                "speaker": "株式会社サイバーエージェント\nABEMAサーバーサイドエンジニア\n前田拓",
+                "hashTag": "room1"
+            },
+            {
+                "day": 1,
+                "loc": "Room2",
+                "startTime": "14:40",
+                "endTime": "15:40",
+                "title": "スマホゲームアプリ開発に必要な技術",
+                "speaker": "CROOZ株式会社 執行役員\n最高技術責任者 CTO\nCROOZ SHOPLIST株式会社\n技術統括部長\n鈴木 優一",
+                "hashTag": "room2"
+            }
+        ],
+        "3": [
+            {
+                "day": 1,
+                "loc": "ホールA",
+                "startTime": "15:50",
+                "endTime": "16:50",
+                "title": "Matzに聞きたい100のこと\n〜Rubyの父に聞く、エンジニアのキャリアとスキル〜",
+                "speaker": "Ruby開発者\nまつもと ゆきひろ",
+                "hashTag": "ホールA"
+            },
+            {
+                "day": 1,
+                "loc": "ホールB",
+                "startTime": "15:50",
+                "endTime": "16:50",
+                "title": "RedCoderのライブ競プロ\n～競プロ世界ランカーのアルゴリズム改善～",
+                "speaker": "AtCoder株式会社\n代表取締役社長\n高橋 直大（chokudai）",
+                "hashTag": "ホールB"
+            },
+            {
+                "day": 1,
+                "loc": "ホールC",
+                "startTime": "15:50",
+                "endTime": "16:50",
+                "title": "日本におけるEdTechの今後の進化",
+                "speaker": "株式会社ドワンゴ\n顧問\n川上 量生",
+                "hashTag": "ホールC"
+            },
+            {
+                "day": 1,
+                "loc": "Room1",
+                "startTime": "15:50",
+                "endTime": "16:50",
+                "title": "初心者必見！機械学習エンジニアがあれこれ話します。\n～基礎から実社会応用まで～",
+                "speaker": "フューチャー株式会社\nStrategic AI Group コンサルタント\n上野貴史\nStrategic AI Group コンサルタント\n玉木竜二",
+                "hashTag": "room1"
+            },
+            {
+                "day": 1,
+                "loc": "Room2",
+                "startTime": "15:50",
+                "endTime": "16:50",
+                "title": "マイクロサービス開発でDockerとGithub Actionsで工夫したこと",
+                "speaker": "パーソルキャリア株式会社\nマルホトラ ヴィクラム",
+                "hashTag": "room2"
+            }
+        ],
+        "4": [
+            {
+                "day": 1,
+                "loc": "ホールA",
+                "startTime": "17:00",
+                "endTime": "18:00",
+                "title": "エンジニアとしてどう生きていくか\n〜20年の技術変遷から考える生存戦略〜",
+                "speaker": "グリー株式会社 取締役\n上級執行役員 最高技術責任者\n藤本 真樹",
+                "hashTag": "ホールA"
+            },
+            {
+                "day": 1,
+                "loc": "ホールB",
+                "startTime": "17:00",
+                "endTime": "18:00",
+                "title": "競プロスキルでビジネス無双\n〜誰もやらないのでエンジニアだけど営業から研究開発まで全部やります〜",
+                "speaker": "フューチャー株式会社\n最適化スペシャリスト\n塚本 祥太",
+                "hashTag": "ホールB"
+            },
+            {
+                "day": 1,
+                "loc": "ホールC",
+                "startTime": "17:00",
+                "endTime": "18:00",
+                "title": "【AbemaTV CTOが学生向けに初登壇！】\n開局後5年のABEMAの裏側に広がるエンジニアリングの世界",
+                "speaker": "株式会社AbemaTV CTO\n西尾 亮太",
+                "hashTag": "ホールC"
+            },
+            {
+                "day": 1,
+                "loc": "Room1",
+                "startTime": "17:00",
+                "endTime": "18:00",
+                "title": "Hello Elasticsearch! \n~ 分散検索/分析エンジン Elasticsearch の紹介と解説 ~",
+                "speaker": "株式会社ゆめみ\nリードエンジニア\n川井健太",
+                "hashTag": "room1"
+            },
+            {
+                "day": 1,
+                "loc": "Room2",
+                "startTime": "17:00",
+                "endTime": "18:00",
+                "title": "バックエンドエンジニアが使用している技術スタックについて解説",
+                "speaker": "株式会社Synspective\n吉海将太\n（ゲスト講師）",
+                "hashTag": "room2"
+            }
+        ]
+    },
+    "day2": {
+        "1": [
+            {
+                "day": 2,
+                "loc": "ホールA",
+                "startTime": "13:30",
+                "endTime": "14:30",
+                "title": "クラウドの進化と可能性\n〜創業して10年、FIXER代表の見る世界〜",
+                "speaker": "株式会社FIXER\n代表取締役社長\n松岡 清一",
+                "hashTag": "ホールA"
+            },
+            {
+                "day": 2,
+                "loc": "ホールB",
+                "startTime": "13:30",
+                "endTime": "14:30",
+                "title": "無駄なものをつくって稼ぐ方法",
+                "speaker": "無駄づくり発明家\nコンテンツクリエイター\n藤原 麻里菜",
+                "hashTag": "ホールB"
+            },
+            {
+                "day": 2,
+                "loc": "ホールC",
+                "startTime": "13:30",
+                "endTime": "14:30",
+                "title": "新技術への向き合い方～幸せなエンジニアライフを送るための4箇条～",
+                "speaker": "株式会社マネーフォワード\n取締役執行役員 CTO\n中出 匠哉",
+                "hashTag": "ホールC"
+            },
+            {
+                "day": 2,
+                "loc": "Room1",
+                "startTime": "13:30",
+                "endTime": "14:30",
+                "title": "業界が求めてるアプリエンジニアとは 〜新卒でAmebaのアプリエンジニアになった二人の歩み方〜",
+                "speaker": "株式会社サイバーエージェント\n西村 大河\n小野 歩",
+                "hashTag": "room1"
+            },
+            {
+                "day": 2,
+                "loc": "Room2",
+                "startTime": "13:30",
+                "endTime": "14:30",
+                "title": "スマホゲーム企画開発の実体験型ワークショップ",
+                "speaker": "芸者東京株式会社\nCEO 田中 泰生\n開発者 金子 嘉寿樹\n開発者 小林 賢矢",
+                "hashTag": "room2"
+            }
+        ],
+        "2": [
+            {
+                "day": 2,
+                "loc": "ホールA",
+                "startTime": "14:40",
+                "endTime": "15:40",
+                "title": "〜ハイクラス人材向けサービスを運営するビズリーチのCTOが語る〜\n「市場価値の高いエンジニア」ってどんなエンジニア？",
+                "speaker": "株式会社ビズリーチ（Visionalグループ）\n執行役員/CTO\n外山英幸",
+                "hashTag": "ホールA"
+            },
+            {
+                "day": 2,
+                "loc": "ホールB",
+                "startTime": "14:40",
+                "endTime": "15:40",
+                "title": "Goライブコーディング2021",
+                "speaker": "株式会社fluct CTO / 株式会社VOYAGE GROUP(CARTA HOLDINGS)\nみんなのGo言語共著者\n鈴木健太",
+                "hashTag": "ホールB"
+            },
+            {
+                "day": 2,
+                "loc": "ホールC",
+                "startTime": "14:40",
+                "endTime": "15:40",
+                "title": "学生時代に思い描いた4年後と今。\n〜学生時代の自分に伝えたい、エンジニアにとって本当に必要なコト〜",
+                "speaker": "株式会社ディー・エヌ・エー\n川邉 哲也\n池野 直人",
+                "hashTag": "ホールC"
+            },
+            {
+                "day": 2,
+                "loc": "Room1",
+                "startTime": "14:40",
+                "endTime": "15:40",
+                "title": "ベイズモデリングによる機械学習入門～センサーデータ解析を題材に～",
+                "speaker": "アクセンチュア株式会社\nビジネスコンサルティング本部\nAIグループ プリンシパル\n須山 敦志",
+                "hashTag": "room1"
+            },
+            {
+                "day": 2,
+                "loc": "Room2",
+                "startTime": "14:40",
+                "endTime": "15:40",
+                "title": "インターネットカンパニーのインフラ環境のリアル",
+                "speaker": "グリー株式会社\n開発本部\nインフラストラクチャ部\n舟橋 弘兼、後藤 浩行\n岸田 祥崇、和田 英二",
+                "hashTag": "room2"
+            }
+        ],
+        "3": [
+            {
+                "day": 2,
+                "loc": "ホールA",
+                "startTime": "15:50",
+                "endTime": "16:50",
+                "title": "超就活術\n〜つよつよエンジニアになる為の５つの絶対原則〜",
+                "speaker": "株式会社ゆめみ\n代表取締役\n片岡俊行",
+                "hashTag": "ホールA"
+            },
+            {
+                "day": 2,
+                "loc": "ホールB",
+                "startTime": "15:50",
+                "endTime": "16:50",
+                "title": "これから必要とされるエンジニアになるために、知っておくべきこと",
+                "speaker": "パーソルキャリア株式会社\nサービス開発統括部\nエグゼクティブマネジャー\n岡本 邦宏",
+                "hashTag": "ホールB"
+            },
+            {
+                "day": 2,
+                "loc": "ホールC",
+                "startTime": "15:50",
+                "endTime": "16:50",
+                "title": "CTOと一緒におしゃべりしましょう！\n〜ミク談出張版〜\nテーマ：エンジニアのモノ作り、活躍、評価について",
+                "speaker": "株式会社ミクシィ 取締役CTO\n村瀬 龍馬",
+                "hashTag": "ホールC"
+            },
+            {
+                "day": 2,
+                "loc": "Room1",
+                "startTime": "15:50",
+                "endTime": "16:50",
+                "title": "ある日「Webエンジニアなら、Webサーバーは作れますよね」と言われたら？ ~ 3つのJVM言語で作って学ぶ",
+                "speaker": "株式会社ビズリーチ\nHRMOS事業部 EXプロダクト部\nSurveyグループ MGR\n田所 駿佑",
+                "hashTag": "room1"
+            },
+            {
+                "day": 2,
+                "loc": "Room2",
+                "startTime": "15:50",
+                "endTime": "16:50",
+                "title": "大規模システムの裏側にあるリアル～レガシー脱却への挑戦をエンジニアが教えます～",
+                "speaker": "フューチャー株式会社\nTechnology Innovation Group\nシニアコンサルタント岩崎裕太\nコンサルタント中村祥有",
+                "hashTag": "room2"
+            }
+        ],
+        "4": [
+            {
+                "day": 2,
+                "loc": "ホールA",
+                "startTime": "17:00",
+                "endTime": "18:00",
+                "title": "［1部］今求められる21世紀型エンジニアに必要なこと［2部］大好評につき今年も開催！若手6人のぶっちゃけトーク",
+                "speaker": "株式会社サイバーエージェント\n技術担当 常務執行役員\n長瀬 慶重",
+                "hashTag": "ホールA"
+            },
+            {
+                "day": 2,
+                "loc": "ホールB",
+                "startTime": "17:00",
+                "endTime": "18:00",
+                "title": "プログラム未経験から一人前のエンジニアとして活躍できるために学生のうちにやっておくべきこと",
+                "speaker": "CROOZ株式会社 執行役員\n最高技術責任者/CTO\nCROOZ SHOPLIST株式会社\n 技術統括部長\n鈴木 優一",
+                "hashTag": "ホールB"
+            },
+            {
+                "day": 2,
+                "loc": "ホールC",
+                "startTime": "17:00",
+                "endTime": "18:00",
+                "title": "実施なし",
+                "speaker": "",
+                "hashTag": "ホールC"
+            },
+            {
+                "day": 2,
+                "loc": "Room1",
+                "startTime": "17:00",
+                "endTime": "18:00",
+                "title": "ミクシィGitChallengeイベント番外編！Git経験者でも正解率10％の難問クイズ式講義",
+                "speaker": "株式会社ミクシィ\n開発本部インフラ室\n映像技術グループ\n藤田朱門",
+                "hashTag": "room1"
+            },
+            {
+                "day": 2,
+                "loc": "Room2",
+                "startTime": "17:00",
+                "endTime": "18:00",
+                "title": "k8sコトハジメ！AzureでサクッとKubernatesを始めてみよう",
+                "speaker": "株式会社FIXER\nCloud Solutions Engineer\n冨本優介",
+                "hashTag": "room2"
+            }
+        ]
+    },
+    "day3": {
+        "1": [
+            {
+                "day": 3,
+                "loc": "ホールA",
+                "startTime": "11:00",
+                "endTime": "12:00",
+                "title": "日本のけしからん行政系機関や大企業でけしからんサイバー技術開発を行なうことについて",
+                "speaker": "IPA サイバー技術研究室長\nNTT東日本 特殊局員\n登 大遊",
+                "hashTag": "ホールA"
+            },
+            {
+                "day": 3,
+                "loc": "ホールB",
+                "startTime": "11:00",
+                "endTime": "12:00",
+                "title": "スーパーコンピュータ富岳による10万ノード級のAIとSociety5.0へのインパクト",
+                "speaker": "理化学研究所 計算科学研究センター\nセンター長 東京工業大学 特任教授\n松岡 聡",
+                "hashTag": "ホールB"
+            },
+            {
+                "day": 3,
+                "loc": "ホールC",
+                "startTime": "11:00",
+                "endTime": "12:00",
+                "title": "実施なし",
+                "speaker": "",
+                "hashTag": "ホールC"
+            },
+            {
+                "day": 3,
+                "loc": "Room1",
+                "startTime": "11:00",
+                "endTime": "12:00",
+                "title": "実施なし",
+                "speaker": "",
+                "hashTag": "room1"
+            },
+            {
+                "day": 3,
+                "loc": "Room2",
+                "startTime": "11:00",
+                "endTime": "12:00",
+                "title": "実施なし",
+                "speaker": "",
+                "hashTag": "room2"
+            }
+        ],
+        "2": [
+            {
+                "day": 3,
+                "loc": "ホールA",
+                "startTime": "13:30",
+                "endTime": "14:30",
+                "title": "CTOが語る、学生が個人開発でイケてる成果物を作るコツ",
+                "speaker": "株式会社VOYAGE GROUP(CARTA HOLDINGS) 取締役CTO\n日本CTO協会 理事\n小賀 昌法",
+                "hashTag": "ホールA"
+            },
+            {
+                "day": 3,
+                "loc": "ホールB",
+                "startTime": "13:30",
+                "endTime": "14:30",
+                "title": "これからのエンジニア／これからのDMM",
+                "speaker": "合同会社DMM.com\nVPoE\n大久保 寛",
+                "hashTag": "ホールB"
+            },
+            {
+                "day": 3,
+                "loc": "ホールC",
+                "startTime": "13:30",
+                "endTime": "14:30",
+                "title": "若手エンジニアがクラウドとAIの最前線で活躍する方法\n〜10年間クラウドの最前線で戦うFIXERの事例〜",
+                "speaker": "株式会社FIXER\n執行役員CSO\n岡安 英俊",
+                "hashTag": "ホールC"
+            },
+            {
+                "day": 3,
+                "loc": "Room1",
+                "startTime": "13:30",
+                "endTime": "14:30",
+                "title": "グローバルなエンジニアになるための英語入門",
+                "speaker": "AVA Intelligence\n小峰太一\n（ゲスト講師）",
+                "hashTag": "room1"
+            },
+            {
+                "day": 3,
+                "loc": "Room2",
+                "startTime": "13:30",
+                "endTime": "14:30",
+                "title": "実施なし",
+                "speaker": "",
+                "hashTag": "room2"
+            }
+        ],
+        "3": [
+            {
+                "day": 3,
+                "loc": "ホールA",
+                "startTime": "14:40",
+                "endTime": "15:40",
+                "title": "2年で3億7000万人に遊ばれる\nスマホゲームの作り方",
+                "speaker": "芸者東京株式会社\nCEO\n田中 泰生",
+                "hashTag": "ホールA"
+            },
+            {
+                "day": 3,
+                "loc": "ホールB",
+                "startTime": "14:40",
+                "endTime": "15:40",
+                "title": "ただプログラマでありたい～夢中になれるプログラミングの楽しみ方～",
+                "speaker": "GMOインターネット株式会社\nデベロッパーエバンジェリスト\n成瀬 允宣",
+                "hashTag": "ホールB"
+            },
+            {
+                "day": 3,
+                "loc": "ホールC",
+                "startTime": "14:40",
+                "endTime": "15:40",
+                "title": "LIFULL HOME'Sの開発現場から学ぶエンジニアとして活躍し評価されていくための方法",
+                "speaker": "株式会社LIFULL  CTO\n長沢 翼",
+                "hashTag": "ホールC"
+            },
+            {
+                "day": 3,
+                "loc": "Room1",
+                "startTime": "14:40",
+                "endTime": "15:40",
+                "title": "開発サイクルを爆速に！Azure DevOpsでビルド&デプロイを自動化",
+                "speaker": "株式会社FIXER\nCloud Solutions Engineer\n河野光司",
+                "hashTag": "room1"
+            },
+            {
+                "day": 3,
+                "loc": "Room2",
+                "startTime": "14:40",
+                "endTime": "15:40",
+                "title": "ひとりで作る画像検索システム",
+                "speaker": "OLTA株式会社\n山際康貴\n（ゲスト講師）",
+                "hashTag": "room2"
+            }
+        ],
+        "4": [
+            {
+                "day": 3,
+                "loc": "ホールA",
+                "startTime": "15:50",
+                "endTime": "16:50",
+                "title": "技術書執筆のススメ\n〜Only1なエンジニアになるためのセルフブランディング〜",
+                "speaker": "フューチャー株式会社\nシニアアーキテクト\n澁川喜規",
+                "hashTag": "ホールA"
+            },
+            {
+                "day": 3,
+                "loc": "ホールB",
+                "startTime": "15:50",
+                "endTime": "16:50",
+                "title": "モダンフロントエンドの技術の追いかけ方 ~ OSS の魅力を添えて~",
+                "speaker": "株式会社ゆめみ\n取締役\n桑原聖仁",
+                "hashTag": "ホールB"
+            },
+            {
+                "day": 3,
+                "loc": "ホールC",
+                "startTime": "15:50",
+                "endTime": "16:50",
+                "title": "これからの時代に必要な技術力とは\n〜プロダクトとビジネスの仮説検証の方法論〜",
+                "speaker": "reee株式会社\nCTO/共同創業者\n横路 隆",
+                "hashTag": "ホールC"
+            },
+            {
+                "day": 3,
+                "loc": "Room1",
+                "startTime": "15:50",
+                "endTime": "16:50",
+                "title": "はじめてでもわかる！コンテナ入門 - 社内研修公開しちゃいます -",
+                "speaker": "GMOインターネット株式会社\nデベロッパーエバンジェリスト\n元内 柊也",
+                "hashTag": "room1"
+            },
+            {
+                "day": 3,
+                "loc": "Room2",
+                "startTime": "15:50",
+                "endTime": "16:50",
+                "title": "ネイティブアプリテックリードによる「アプリ開発における新技術の取り入れ方」",
+                "speaker": "LIFULL HOME'S事業本部 PE部 PE4ユニット 開発7グループ\nスペシャリスト（ネイティブアプリ テックリード）\n菊地 慧",
+                "hashTag": "room2"
+            }
+        ],
+        "5": [
+            {
+                "day": 3,
+                "loc": "ホールA",
+                "startTime": "17:00",
+                "endTime": "18:00",
+                "title": "ひろゆきだけど何か質問ある？",
+                "speaker": "元2ちゃんねる管理人\nひろゆき",
+                "hashTag": "ホールA"
+            },
+            {
+                "day": 3,
+                "loc": "ホールB",
+                "startTime": "17:00",
+                "endTime": "18:00",
+                "title": "【パネルディスカッション】\nプログラミング以外にも重要なこと\n〜モノづくりキャリアの歩み方〜",
+                "speaker": "サイカCTO 是澤 太志\n時空テクノロジーズCEO 橋本 善久\nマクアケCTO 生内 洋平",
+                "hashTag": "ホールB"
+            },
+            {
+                "day": 3,
+                "loc": "ホールC",
+                "startTime": "17:00",
+                "endTime": "18:00",
+                "title": "元エンジニアの人事3人が\n人生と就活の相談に乗ってみる",
+                "speaker": "サイバーエージェント 峰岸 啓人\nFIXER 伊藤 翼\nVOYAGE GROUP 佐々木 寛",
+                "hashTag": "ホールC"
+            },
+            {
+                "day": 3,
+                "loc": "Room1",
+                "startTime": "17:00",
+                "endTime": "18:00",
+                "title": "スマホゲーム企画開発の実体験型ワークショップ",
+                "speaker": "芸者東京株式会社\nCEO 田中 泰生\n開発者 金子 嘉寿樹\n開発者 小林 賢矢",
+                "hashTag": "room1"
+            },
+            {
+                "day": 3,
+                "loc": "Room2",
+                "startTime": "17:00",
+                "endTime": "18:00",
+                "title": "Webアプリ開発入門者必見！\nFirebase入門！|nReact + Firebase Realtime Databaseの|nデプロイまでをライブコーディングで公開！",
+                "speaker": "技育プロジェクト\nハッカソン事務局\n三浦 裕典",
+                "hashTag": "room2"
+            }
+        ]
+    }
+}
