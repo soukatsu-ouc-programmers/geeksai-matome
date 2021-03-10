@@ -59,11 +59,12 @@ a:link,a:visited,a:hover,a:active {
   color: var(--main-color);
 }
 h1 {
-  font-size: 30px;
+  font-size: 1.5vw;
   margin: 0;
   padding: 0 0 0 0;
 }
 ul {
+  font-size: 1.5vw;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -143,15 +144,7 @@ table {
   margin: 0px;
   color: var(--hall-color-c);
 }
-
-.holeA > .sessionBlock {
-}
-.holeB > .sessionBlock {
-}
-.holeC > .sessionBlock {
-}
 h3:not(.info > h3) {
-  /* width: 318px; */
   width: 298px;
   height: 68px;
   /* margin: 0px 19px 0px 0px; */
@@ -170,10 +163,10 @@ h3:not(.info > h3) {
   width: 298px;
   /* width: 100%; */
   margin: 10px auto 10px auto; 
-  padding: 35px 5px;
+  padding: 40px 5px 0 5px;
   cursor: pointer;
   text-align: center;
-  height: 189px;
+  height: 200px;
   border-radius: 36px;
   background: var(--base-color);
   box-shadow: 9px 9px 13px var(--shadow-color),
@@ -189,7 +182,10 @@ h3:not(.info > h3) {
   text-align: center;
   /* margin-bottom: 30px; */
 }
-
+.speaker{
+  display: inline-block;
+  margin-top: 30px;
+}
 /* 使い方のとこ */
 .use {
   width: 90%;
@@ -304,6 +300,9 @@ header{
   height: 90px;
   padding: 0%;
   font-size: 12px;
+}
+h1{
+  font-size: 30px;
 }
 .menu_wrapper{
   margin: initial;
