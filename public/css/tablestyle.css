@@ -23,7 +23,7 @@ body {
 }
 header {
   width: 100%;
-  padding: 30px 104px 35px 79px;
+  padding: 0 30px;
   /* margin: 0 0 148px 0; */
   background-color: var(--main-color);
   color: var(--base-color);
@@ -31,6 +31,8 @@ header {
   top: 0;
   display: flex;
   align-items: center;
+
+  position:fixed;
 }
 a:link,a:visited,a:hover,a:active {
   color: var(--highlight-color);
@@ -44,8 +46,9 @@ a:link,a:visited,a:hover,a:active {
   display: flex;
 }
 .main{
-    padding-top: 148px;
-    width: 100%;
+  padding-top: 148px;
+  /* padding-top: 100px; */
+  width: 100%;
 }
 .times {
   width: 61px;
@@ -109,6 +112,8 @@ h2 {
 }
 table {
   margin: 0 0 275px 0;
+  margin-top: -100px;
+  padding-top: 100px;
 }
 .Day {
   font-size: 50px;
@@ -121,11 +126,11 @@ table {
 }
 .room1 {
   margin: 0px;
-  color: var(--room-color);
+  color: var(--room-color) !important;
 }
 .room2 {
   margin: 0px;
-  color: var(--room-color);
+  color: var(--room-color) !important;
 }
 .holes {
   width: 100%;
@@ -134,15 +139,15 @@ table {
 
 .holeA {
   margin: 0px;
-  color: var(--hall-color-a);
+  color: var(--hall-color-a) !important;
 }
 .holeB {
   margin: 0px;
-  color: var(--hall-color-b);
+  color: var(--hall-color-b) !important;
 }
 .holeC {
   margin: 0px;
-  color: var(--hall-color-c);
+  color: var(--hall-color-c) !important;
 }
 h3:not(.info > h3) {
   width: 298px;
@@ -243,11 +248,11 @@ footer {
   display: flex;
   text-align: center;
   margin-bottom: 78px;
+  color: var(--main-color);
 }
 
 .info > h3 {
   font-size: 2rem;
-  color: var(--main-color);
   margin: 20px;
 }
 
