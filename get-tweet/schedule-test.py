@@ -18,7 +18,7 @@ sched = BlockingScheduler()
 # @sched.scheduled_job('cron', hour=18, minute=10, year=2021, month=3, day='11-13')
 # def session5():
 #    print('This job is run every three minutes.')
-@sched.scheduled_job('cron', hour=23, minute=18, args=['aaaaa'])
+@sched.scheduled_job('cron', hour=23, minute=20, args=['aaaaa'])
 def getTweet(key):
    print(key)
 
