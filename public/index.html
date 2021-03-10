@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="./css/tablestyle.css">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <style>
         td {
             padding: 10px 20px;
@@ -75,7 +76,7 @@
         </div>
     </header>
     <div class="main" id="app">
-        <table v-for="(day, key) in sessionData"  v-bind:id="key">
+        <table v-for="(day, key) in sessionData" v-bind:id="key">
             <thead>
                 <th colspan="1" class="Day">{{ key }}</th>
                 <th colspan="3">
