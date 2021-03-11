@@ -21,7 +21,7 @@ app.get("/db/", (req, res) => {
       // client.query("SELECT name FROM test", (err, result) => {
       (async () => {
         await client.query(
-          `SELECT * FROM ${tb_name} ORDER BY id desc limit 10`,
+          `SELECT * FROM "${tb_name}" ORDER BY id desc limit 10`,
           (err, result) => {
             if (err) {
               console.log(err);
