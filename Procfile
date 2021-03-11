@@ -1,1 +1,1 @@
-clock: python get-tweet/schedule-test.py
+clock: python get-tweet/get-tweet.py
