@@ -22,7 +22,7 @@ app.get("/db/", (req, res) => {
       (async () => {
         await client.query(
           // `SELECT * FROM "${tb_name}" ORDER BY id desc limit 10`,
-          `SELECT * FROM "${tb_name}" ORDER BY id desc limit 10`,
+          `SELECT * FROM "${tb_name}" ORDER BY id desc`,
           (err, result) => {
             release();
             if (err) {
