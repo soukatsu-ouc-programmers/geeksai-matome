@@ -9,7 +9,7 @@ app.use(express.static("public"));
 app.get("/db/", (req, res) => {
   // res.send("hello");
   tb_name = req.query.s;
-  if (!tb_name.match(/(hole|room)[A-D]_Day[1-3]_[1-5]/g)) {
+  if (!tb_name.match(/(hole|room)[A-C1-2]_Day[1-3]_[1-5]/g)) {
     res.send([{ tweet_str_id: "1369848266385330183" }]);
     return;
   }
