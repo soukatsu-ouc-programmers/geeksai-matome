@@ -19,23 +19,27 @@ app.get("/db/", (req, res) => {
       res.send(err);
     } else {
       // client.query("SELECT name FROM test", (err, result) => {
-      client.query(`SELECT * FROM "${tb_name}" ORDER BY id desc limit 10`,
-        (err, result) => {
-          if (err) {
-            console.log(err);
-            res.send([{ tweet_str_id: "1369848266385330183" }]);
-          } else {
-            // console.log(result.rows);
-            // res.send(result.rows.slice(0, 10));
-            if (result == undefined) {
+      (async () => {
+        await client.query(
+          `SELECT * FROM ${tb_name} ORDER BY id desc limit 10`,
+          (err, result) => {
+            if (err) {
+              console.log(err);
               res.send([{ tweet_str_id: "1369848266385330183" }]);
             } else {
-              res.send(result.rows);
               // console.log(result.rows);
+              // res.send(result.rows.slice(0, 10));
+              if (result == undefined) {
+                res.send([{ tweet_str_id: "1369848266385330183" }]);
+              } else {
+                res.send(result.rows);
+                console.log(result.rows);
+              }
             }
           }
-        }
-      );
+        );
+        assert(client.release === release);
+      })();
     }
   });
 });
