@@ -8,19 +8,39 @@ app.use(express.static("public"));
 
 app.get("/db/", (req, res) => {
   // res.send("hello");
+  tb_name = req.query.s;
+  if (!tb_name.match(/(hole|room)[A-D]_Day[1-3]_[1-5]/g)) {
+    res.send([{ tweet_str_id: "1369848266385330183" }]);
+    return;
+  }
   db.pool.connect((err, client) => {
     if (err) {
       console.log(err);
       res.send(err);
     } else {
       // client.query("SELECT name FROM test", (err, result) => {
-      client.query("SELECT * FROM tracka", (err, result) => {
-        // console.log(result.rows);
-        // res.send(result.rows.slice(0, 10));
-        res.send(result.rows);
+      client.query(`SELECT * FROM ${tb_name}`, (err, result) => {
+        if (err) {
+          console.log(err);
+          res.send([{ tweet_str_id: "1369848266385330183" }]);
+        } else {
+          // console.log(result.rows);
+          // res.send(result.rows.slice(0, 10));
+          if (result == undefined) {
+            res.send([{ tweet_str_id: "1369848266385330183" }]);
+          } else {
+            res.send(result.rows);
+            // console.log(result.rows);
+          }
+        }
       });
     }
   });
+});
+
+app.get("/test/", (req, res) => {
+  tb_name = req.query.s;
+  res.send(tb_name);
 });
 
 const port = process.env.PORT || 5000;

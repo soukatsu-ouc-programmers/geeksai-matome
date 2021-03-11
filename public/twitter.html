@@ -109,14 +109,19 @@
                     // const url = './js/data/api-out.json'
                     // const url = './js/data/roomb/session_1.json'
                     // const url = `./js/data/${room}/session_${session}.json`
-                    const url = `./db/`
-                    await axios.get(url).then(x => { this.tweetData = x.data })
+                    const url = `./db/?s=${query}`
+                    await axios.get(url).then(x => {
+                        if (x == undefined){
+                            tweetData = [{"tweet_str_id": 1369848266385330183}]
+                        }
+                        this.tweetData = x.data;
+                    })
                     // await axios.get(url).then(x => { this.tweetData = x.data['tweet'] })
                     // this.tweetIds = tweetData.reduce((acc, value, index) => {
                     //     acc.push(value['user']['id']);
                     //     return acc;
                     // }, []);
-                    console.log(this.tweetData)
+                    // console.log(this.tweetData)
                     document.querySelectorAll('.tweet-container').forEach((v, i) => {
                         // console.log(this.tweetData[i]['tweet_str_id']);
                         twttr.widgets.createTweet(
@@ -134,11 +139,11 @@
                     allSession = {}
                     await axios.get(url).then(x => { allSession = x.data });
                     this.sessionData = allSession[day][time]['sessions'].find(v => v.loc == room)
-                    console.log(this.sessionData)
+                    // console.log(this.sessionData)
                 }
             },
             mounted() {
-                // this.getTweetData();
+                this.getTweetData();
                 this.getSessionData();
             }
         });
