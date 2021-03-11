@@ -111,11 +111,14 @@
                     // const url = `./js/data/${room}/session_${session}.json`
                     const url = `./db/?s=${query}`
                     await axios.get(url).then(x => {
-                        if (x == undefined){
-                            tweetData = [{"tweet_str_id": 1369848266385330183}]
+                        if (x == undefined) {
+                            tweetData = [{ "tweet_str_id": 1369848266385330183 }]
                         }
                         this.tweetData = x.data;
                     })
+                        .catch(
+                            err => { alert('ツイート読み込みでエラーが発生しました。本当にすみません…。時間を置いてもう一度アクセスしてください。') }
+                        )
                     // await axios.get(url).then(x => { this.tweetData = x.data['tweet'] })
                     // this.tweetIds = tweetData.reduce((acc, value, index) => {
                     //     acc.push(value['user']['id']);
@@ -137,7 +140,7 @@
                 async getSessionData() {
                     const url = './js/data/session.json';
                     allSession = {}
-                    await axios.get(url).then(x => { allSession = x.data }).catch(err => { alert('ツイート読み込みでエラーが発生しました。本当にすみません…。時間を置いてもう一度アクセスしてください。') });
+                    await axios.get(url).then(x => { allSession = x.data });
                     this.sessionData = allSession[day][time]['sessions'].find(v => v.loc == room)
                     // console.log(this.sessionData)
                 }
