@@ -137,7 +137,7 @@
                 async getSessionData() {
                     const url = './js/data/session.json';
                     allSession = {}
-                    await axios.get(url).then(x => { allSession = x.data });
+                    await axios.get(url).then(x => { allSession = x.data }).catch(err => { alert('ツイート読み込みでエラーが発生しました。本当にすみません…。時間を置いてもう一度アクセスしてください。') });
                     this.sessionData = allSession[day][time]['sessions'].find(v => v.loc == room)
                     // console.log(this.sessionData)
                 }
