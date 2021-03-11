@@ -13,7 +13,7 @@ app.get("/db/", (req, res) => {
     res.send([{ tweet_str_id: "1369848266385330183" }]);
     return;
   }
-  db.pool.connect((err, client) => {
+  db.pool.connect((err, client, release) => {
     if (err) {
       console.log(err);
       res.send(err);
@@ -21,8 +21,10 @@ app.get("/db/", (req, res) => {
       // client.query("SELECT name FROM test", (err, result) => {
       (async () => {
         await client.query(
+          // `SELECT * FROM "${tb_name}" ORDER BY id desc limit 10`,
           `SELECT * FROM "${tb_name}" ORDER BY id desc limit 10`,
           (err, result) => {
+            release();
             if (err) {
               console.log(err);
               res.send([{ tweet_str_id: "1369848266385330183" }]);
@@ -38,7 +40,7 @@ app.get("/db/", (req, res) => {
             }
           }
         );
-        assert(client.release === release);
+        
       })();
     }
   });
