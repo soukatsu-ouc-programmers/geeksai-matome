@@ -19,7 +19,7 @@ app.get("/db/", (req, res) => {
       res.send(err);
     } else {
       // client.query("SELECT name FROM test", (err, result) => {
-      client.query(`SELECT * FROM ${tb_name}`, (err, result) => {
+      client.query(`SELECT * FROM "${tb_name}"`, (err, result) => {
         if (err) {
           console.log(err);
           res.send([{ tweet_str_id: "1369848266385330183" }]);
