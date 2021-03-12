@@ -104,7 +104,7 @@ def get_tweet(name, hashTag):
 
     session.commit()
     print(f'saved {name}')
-
+    session.close()
     # # jsonに保存
     # store_data = [
     #     {'tweet_id': v['id_str'],
